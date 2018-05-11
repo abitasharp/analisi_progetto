@@ -1,0 +1,28 @@
+Abita#
+
+Abitasharp è una piattaforma web per la pubblicazione ed il confronto di annunci immobiliari a Bologna finalizzata a semplificare l’interazione tra affittuario e locatore.
+
+Il servizio permette
+
+agli utenti registrati di:
+
+    - pubblicare un annuncio (casa, stanza o posto letto) con la possibilità di specificare vari requisiti (no fumatori, no animali, ecc.)
+      
+    - cercare un immobile filtrando quelli disponibili secondo più criteri (prezzo, zona,  ecc.) ed eventualmente contattare il locatore
+      
+    - ricevere notifiche nel caso venga pubblicato un annuncio i cui requisiti rispettino il proprio profilo
+
+agli utenti non registrati di:
+
+    - navigare tra le varie offerte, senza la possibilità di contattare il locatore
+      
+    - registrarsi al servizio ☻
+
+La registrazione consiste nell’inserimento e nella validazione dei propri dati personali.
+L’utente in seguito viene invitato a definire le proprie caratteristiche (modificabili successivamente), che andranno a confrontarsi coi requisiti specificati negli annunci dai locatori.
+
+Per pubblicare un annuncio l’utente registrato dovrà specificare:
+
+    1. tipologia annuncio (casa, stanza, posto letto...)
+    2. caratteristiche immobile (locazione, costo...)
+    3. requisiti affittuari (fumatori, erasmus, animali...)

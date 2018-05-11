@@ -1,4 +1,9 @@
--Gli utenti registrati hanno la possibilità di inserire e cercare annunci sulla piattaforma. 
--Il locatario alla pubblicazione di un annuncio deve specificare i seguenti attributi dell'immobile: tipologia, indirizzo, prezzo, periodo, note(facoltativo). Inoltre può specificare i requisiti  dell'affittuario  (genere, fumatore, erasmus, animali domestici, studente, lavoratore, famiglia).
--L'utente al momento della registrazione deve inserire i propri dati personali (nome, cognome, email, password, recapito telefonico, data di nascita). Successivamente alla registrazione e in qualsiasi altro momento l'utente ha la possibilità di modificare un insieme di caratteristiche secondarie (genere, fumatore, erasmus, animali domestici, studente, lavoratore, famiglia). 
--La valuta di riferimento è l'euro.
+- Gli utenti hanno la possibilità di registrarsi come privati (per inserire e cercare annunci sulla piattaforma) o come business (possono solo inserire annunci).
+
+- Il locatario alla pubblicazione di un annuncio deve specificare i seguenti attributi dell'immobile: tipologia, indirizzo, prezzo, periodo, note(facoltativo). Inoltre può specificare i requisiti  dell'affittuario  (genere, fumatore, erasmus, animali domestici, studente, lavoratore, famiglia).
+
+- L'utente privato al momento della registrazione deve inserire i propri dati personali (nome, cognome, email, password, recapito telefonico, data di nascita). Successivamente alla registrazione e in qualsiasi altro momento l'utente ha la possibilità di modificare un insieme di caratteristiche secondarie (genere, fumatore, erasmus, animali domestici, studente, lavoratore, famiglia). 
+
+- L'utente business al momento della registrazione deve inserire i dati dell'azienda (nome, email, password, recapito telefonico, partita iva).
+
+- La valuta di riferimento è l'euro.
