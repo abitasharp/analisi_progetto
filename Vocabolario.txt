@@ -22,7 +22,7 @@
 |  CARATTERISTICHE  | Attributi di un utente privato.                  | ESIGENZE                                    |
 |                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
-|     REQUISITI     | Insieme di attributi di un annuncio che          |                                             |                                             |
+|     REQUISITI     | Insieme di attributi di un annuncio che          |                                             |                                             
 |                   | gestiscono la compatibilità con gli utenti.      |                                             |                                              
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |     RECAPITI      | Informazioni di contatto.                        |                                             |
@@ -40,8 +40,8 @@
 |     PASSWORD      | Codice alfanumerico di almeno 8 caratteri.       |                                             |
 |                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
-|                   |                                                  |                                             |
-|                   |                                                  |                                             |
+|     TIPOLOGIA     | Categoria immobile (posto letto, stanza,         |                                             |
+|      ANNUNCIO     | appartamento).                                   |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |                   |                                                  |                                             |
 |                   |                                                  |                                             |
