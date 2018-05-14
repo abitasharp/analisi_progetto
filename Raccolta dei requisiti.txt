@@ -4,7 +4,7 @@
 
 -L'azienda al momento della registrazione deve inserire i dati dell'attività (nome, email, password, recapito telefonico, partita iva).
 
--L'utente privato ha la possibilità di visulizzare negli annunci i recapiti del locatario e di ricevere notifiche (tramite email) che lo informino riguardo nuove inserzioni corrispondenti alle sue esigenze. Esso ha inoltre la possibilità di seguire gli stessi aggiungendoli ad una lista di preferiti.
+-Il privato ha la possibilità di visulizzare negli annunci i recapiti del locatario e di ricevere notifiche (tramite email) che lo informino riguardo nuove inserzioni corrispondenti alle sue esigenze. Esso ha inoltre la possibilità di seguire gli stessi aggiungendoli ad una lista di preferiti.
 
 -L'utente non registrato può visualizzare tutti gli annunci pubblicati sulla piattaforma senza tuttavia poter accedere ai recapiti dei locatari. 
 
