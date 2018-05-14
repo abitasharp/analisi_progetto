@@ -1,17 +1,17 @@
-- Gli utenti hanno la possibilità di registrarsi come privati (per inserire e cercare annunci sulla piattaforma) o come azienda (possono solo inserire annunci).
+- Gli utenti hanno la possibilità di registrarsi come privati o come azienda.
 
-- L'utente privato al momento della registrazione deve inserire i propri dati personali (nome, cognome, email, password, recapito telefonico, data di nascita). Successivamente alla registrazione e in qualsiasi altro momento l'utente ha la possibilità di modificare delle caratteristiche proprie secondarie (genere, fumatore, erasmus, animali domestici, studente, lavoratore, famiglia) da applicare ai filtri di ricerca. 
+- Il privato al momento della registrazione deve inserire i propri dati personali (nome, cognome, email, password,  numero di telefono, data di nascita). Successivamente alla registrazione e in qualsiasi altro momento l'utente ha la possibilità di modificare delle caratteristiche proprie secondarie (genere, fumatore, erasmus, animali domestici, studente, lavoratore, famiglia) da applicare come filtri di ricerca.
 
--L'azienda al momento della registrazione deve inserire i dati dell'attività (nome, email, password, recapito telefonico, partita iva).
+-L'azienda al momento della registrazione deve inserire i dati dell'attività (nome, email, password, numero di telefono, partita iva).
 
--Il privato ha la possibilità di visulizzare negli annunci i recapiti del locatario e di ricevere notifiche (tramite email) che lo informino riguardo nuove inserzioni corrispondenti alle sue esigenze. Esso ha inoltre la possibilità di seguire gli stessi aggiungendoli ad una lista di preferiti.
+-Il privato ha la possibilità di visulizzare negli annunci i recapiti del locatario e di ricevere notifiche (tramite email) che lo informino riguardo nuove inserzioni corrispondenti alle sue esigenze. Esso ha inoltre la possibilità di seguire gli annunci aggiungendoli ad una lista di preferiti.
 
--L'utente non registrato può visualizzare tutti gli annunci pubblicati sulla piattaforma senza tuttavia poter accedere ai recapiti dei locatari. 
+-L'utente non registrato può visualizzare tutti gli annunci pubblicati sulla piattaforma senza tuttavia poter accedere ai recapiti dei locatari.
 
-- Il locatario alla pubblicazione di un annuncio deve specificare i seguenti attributi dell'immobile: tipologia, indirizzo, prezzo, periodo, note(facoltativo). Successivamente può specificare i requisiti  dell'affittuario/i  (genere, fumatore, erasmus, animali domestici, studente, lavoratore, famiglia). Inoltre può allegare delle foto.
+- Il locatario alla pubblicazione di un annuncio deve specificare i seguenti attributi dell'immobile: tipologia, indirizzo, prezzo, periodo, note (facoltativo). Successivamente può specificare i requisiti  dell'affittuario/i  (genere, fumatore, erasmus, animali, studente, lavoratore, famiglia). Inoltre può allegare delle foto.
 
 -L'affittuario al momento della ricerca può specificare la tipologia, la zona, il prezzo massimo e il periodo di disponibilità degli immobili da visualizzare.
 
--Gli annunci rimangono attivi sulla piattaforma per una durata massima scelta dal locatario fra varie opzioni. E' responsabilità dello stesso chiudere l'annuncio una volta trovato l'affituario/i.
+-Gli annunci rimangono attivi sulla piattaforma per una durata massima scelta dal locatario fra varie opzioni. E' responsabilità dello stesso chiuderli una volta trovato l'affituario/i.
  
 - La valuta di riferimento è l'euro.
