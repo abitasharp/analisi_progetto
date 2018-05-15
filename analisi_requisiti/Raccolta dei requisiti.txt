@@ -8,7 +8,7 @@ LISTA REQUISITI
 
 -Il privato ha la possibilità di visulizzare negli annunci i recapiti del locatario e di ricevere notifiche (tramite email) che lo informino riguardo nuove inserzioni corrispondenti alle sue esigenze. Esso ha inoltre la possibilità di seguire gli annunci aggiungendoli ad una lista di preferiti.
 
--L'utente non registrato può visualizzare tutti gli annunci pubblicati sulla piattaforma senza tuttavia poter accedere ai recapiti dei locatari.
+-Il visitatore può visualizzare tutti gli annunci pubblicati sulla piattaforma senza tuttavia poter accedere ai recapiti dei locatari.
 
 - Il locatario alla pubblicazione di un annuncio deve specificare i seguenti attributi dell'immobile: tipologia, indirizzo, prezzo, periodo, note (facoltativo). Successivamente può specificare i requisiti  dell'affittuario/i  (genere, fumatore, erasmus, animali, studente, lavoratore, famiglia). Inoltre può allegare delle foto.
 
@@ -26,6 +26,9 @@ VOCABOLARIO
 +===================+==================================================+=============================================+
 |      UTENTE       | Persona che utilizza la piattaforma. Può         | LOCATARIO, AFFITTUARIO, PRIVATO, AZIENDA    |
 |                   | essere registrato o meno.                        |                                             |
++-------------------+--------------------------------------------------+---------------------------------------------+
+|    VISITATORE     | Utente non registrato.                           |                                             |
+|                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |      PRIVATO      | Utente registrato come privato. Può contattare   |                                             |
 |                   | i locatari degli annunci.                        |                                             |
@@ -65,9 +68,6 @@ VOCABOLARIO
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |     TIPOLOGIA     | Categoria immobile (posto letto, stanza,         |                                             |
 |      ANNUNCIO     | appartamento).                                   |                                             |
-+-------------------+--------------------------------------------------+---------------------------------------------+
-|                   |                                                  |                                             |
-|                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |                   |                                                  |                                             |
 |                   |                                                  |                                             |
