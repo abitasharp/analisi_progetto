@@ -53,22 +53,22 @@
 | PRECONDIZIONI     |                                                                                                |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| POSTCONDIZIONI    | La registrazione va a buon fine, l'utente esegue il primo login                                 |
+| POSTCONDIZIONI    | I dati dell'utente vengono salvati.                                                            |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARIO          | 1. Il visitatore accede alla sezione di registrazione.                                         |
-| PRINCIPALE        | 2. Il visitatore inserisce nome, cognome, data di nascita, email e password                    |
-|                   | 3. Il sistema memorizza i dati inseriti, valida l'email e invia un messaggio contenente        |
+| PRINCIPALE        | 2. Il visitatore sceglie il tipo di profilo e inserisce i relativi dati di registrazione.       |
+|                   | 3. Il sistema memorizza i dati inseriti, valida l'email e invia una email contenente           |
 |                   |    un link che permette di completare la procedura.                                            |
-|                   | 4. Il sistema abilita l'account.                                                               |
+|                   | 4. Il sistema abilita l'account all'attivazione del link.                                      |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. L'email inserita non è valida                                                               |
 | ALTERNATIVI       |   1. Il visitatore viene notificato e rediretto alla schermata di registrazione.                |
 |                   | B. La procedura non viene completata entro 24h (link non pervenuto)                            |
 |                   |   1. Il sistema elimina i dati inseriti annullando la registrazione.                           |
 +-------------------+------------------------------------------------------------------------------------------------+
-| REQUISITI NON     | Velocità di memorizzazione e semplicità di navigazione tra le diverse interfacce.              |
-| FUNZIONALI        |                                                                                                |
+| REQUISITI NON     | Protezione di dati e privacy.                                                                  |
+| FUNZIONALI        | Velocità di memorizzazione e semplicità d'uso.                                                 |
 +-------------------+------------------------------------------------------------------------------------------------+
 | PUNTI APERTI      | Proteggere la registrazione tramite test di Turing (es. CAPTCHA) al fine di impedirne l'uso     |
 |                   | improprio.                                                                                     |
@@ -101,12 +101,13 @@
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARIO          | 1. Login                                                                                       |
-| PRINCIPALE        | 2. L'utente può scegliere di creare un annuncio. Il sistema lo reindirizza all'apposita        |
+| PRINCIPALE        | 2. L'utente accede alla schermata di gestione annunci.                                         |
+|                   | 3. L'utente può scegliere di creare un annuncio. Il sistema lo reindirizza all'apposita        |
 |                   |   schermata.                                                                                   |
-|                   | 3 L'utente può scegliere di modificare un annuncio aperto in precedenza. Il sistema lo          |
+|                   | 4 L'utente può scegliere di modificare un annuncio aperto in precedenza. Il sistema lo          |
 |                   |   reindirizza all'apposita schermata.                                                          |
-|                   | 4 L'utente può scegliere di chiudere un annuncio aperto in precedenza.                         |
-|                   | 5. L'utente può navigare nella cronologia dei suoi annunci.                                    |
+|                   | 5 L'utente può scegliere di chiudere un annuncio aperto in precedenza.                         |
+|                   | 6. L'utente può navigare nella cronologia dei suoi annunci.                                    |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
 | ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
@@ -152,8 +153,8 @@
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
 | ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
-|                   | B. I dati inseriti dall'utente non sono validi                                                 |
-|                   |   1. L'utente viene avvisato dell'errore.                                                      |
+|                   | B. L'utente non ha inserito tutti i dati obbligatori                                           |
+|                   |   1. L'utente viene notificato dell'errore ed invitato ad inserire i dati mancanti.             |
 +-------------------+------------------------------------------------------------------------------------------------+
 | REQUISITI NON     | Protezione dei dati, velocità delle operazioni di memorizzazione, semplicità d'uso.            |
 | FUNZIONALI        |                                                                                                |
@@ -187,12 +188,10 @@
 | POSTCONDIZIONI    | Il sistema mostra tutti gli annunci compatibili con i filtri impostati.                         |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARIO          | 1. L'utente si autentica eseguendo il login.                                                   |
-| PRINCIPALE        | 2. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili.                 |
-|                   | 3. L'utente, se interessato, contatta il locatario di un annuncio.                             | 
-|                   | 4. L'utente può salvare le preferenze dei filtri nel proprio profilo.                            |
+| SCENARIO          | 1. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili.                 |
+| PRINCIPALE        | 2. Se registrato, può salvare le preferenze dei filtri.                                         |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARI           | A. L'utente non ha effettuato il login e cerca di visualizare i contatti del locatario di un    |                                                      
+| SCENARI           | A. L'utente non ha effettuato il login e cerca di visualizare i contatti del locatario di un    |
 | ALTERNATIVI       |     annuncio                                                                                   |
 |                   |   1. Il sistema reindirizza l'utente alla schermata di login.                                  |
 +-------------------+------------------------------------------------------------------------------------------------+
@@ -210,31 +209,33 @@
 
 
 +-------------------+------------------------------------------------------------------------------------------------+
-| TITOLO            |                                                                                                |
+| TITOLO            | Chiudi                                                                                         |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| DESCRIZIONE       |                                                                                                |
+| DESCRIZIONE       | L'utente chiude l'annuncio rendendolo non più visibile nella piattaforma e disabilitando       |
+|                   | ulteriori modifiche. L'inserzione sarà comunque visibile nella cronologia annunci.              |
++-------------------+------------------------------------------------------------------------------------------------+
+| ATTORI            | Utente registrato                                                                              |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| ATTORI            |                                                                                                |
+| RELAZIONI         | Gestione annunci                                                                               |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| RELAZIONI         |                                                                                                |
+| PRECONDIZIONI     | L'utente è registrato nella piattaforma ed ha pubblicato almeno un annuncio.                   |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| PRECONDIZIONI     |                                                                                                |
-|                   |                                                                                                |
+| POSTCONDIZIONI    | L'annuncio selezionato non è più visibile nella piattaforma ma l'utente può vederlo nella      |
+|                   | propria cronologia.                                                                            |
 +-------------------+------------------------------------------------------------------------------------------------+
-| POSTCONDIZIONI    |                                                                                                |
-|                   |                                                                                                |
+| SCENARIO          | 1. L'utente ha effettuato il login.                                                             |
+| PRINCIPALE        | 2. L'utente va nella schermata di gestione annunci.                                            |
+|                   | 3. L'utente sceglie un annuncio aperto e lo chiude.                                            |
+|                   | 4. Il sistema notifica il successo dell'operazione.                                             |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARIO          |                                                                                                |
-| PRINCIPALE        |                                                                                                |
+| SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
+| ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARI           |                                                                                                |
-| ALTERNATIVI       |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| REQUISITI NON     |                                                                                                |
+| REQUISITI NON     | Protezione dei dati, velocità delle operazioni di accesso ai dati, semplicità d'uso.           |
 | FUNZIONALI        |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | PUNTI APERTI      |                                                                                                |
@@ -249,31 +250,72 @@
 
 
 +-------------------+------------------------------------------------------------------------------------------------+
-| TITOLO            |                                                                                                |
+| TITOLO            | Modifica                                                                                        |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| DESCRIZIONE       |                                                                                                |
+| DESCRIZIONE       | L'utente modifica un annuncio precedentemente pubblicato.                                       |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| ATTORI            |                                                                                                |
+| ATTORI            | Utente registrato                                                                              |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| RELAZIONI         |                                                                                                |
+| RELAZIONI         | Gestione annunci                                                                               |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| PRECONDIZIONI     |                                                                                                |
+| PRECONDIZIONI     | L'utente è registrato nella piattaforma ed ha pubblicato almeno un annuncio.                   |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| POSTCONDIZIONI    |                                                                                                |
+| POSTCONDIZIONI    | Il contenuto dell'annuncio viene aggiornato.                                                   |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARIO          |                                                                                                |
-| PRINCIPALE        |                                                                                                |
+| SCENARIO          | 1. L'utente ha effettuato il login.                                                             |
+| PRINCIPALE        | 2. L'utente va nella schermata di gestione annunci.                                            |
+|                   | 3. L'utente sceglie un annuncio aperto e lo modifica.                                           |
+|                   | 4. Il sistema notifica il successo dell'operazione.                                             |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARI           |                                                                                                |
-| ALTERNATIVI       |                                                                                                |
+| SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
+| ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
 +-------------------+------------------------------------------------------------------------------------------------+
-| REQUISITI NON     |                                                                                                |
+| REQUISITI NON     | Protezione dei dati, velocità delle operazioni di accesso ai dati, semplicità d'uso.           |
+| FUNZIONALI        |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| PUNTI APERTI      |                                                                                                |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+
+
+
+
+
+
+
++-------------------+------------------------------------------------------------------------------------------------+
+| TITOLO            | Cerca cronologia                                                                               |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| DESCRIZIONE       | Permette di navigare tra gli annunci precedentemente pubblicati sulla piattaforma, filtrandoli  |
+|                   | secondo vari criteri.                                                                          |
++-------------------+------------------------------------------------------------------------------------------------+
+| ATTORI            | Utente registrato                                                                              |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| RELAZIONI         | Gestione annunci                                                                               |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| PRECONDIZIONI     | L'utente è registrato presso la piattaforma.                                                   |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| POSTCONDIZIONI    | Il sistema mostra tutti gli annunci compatibili con i filtri impostati.                         |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| SCENARIO          | 1. L'utente si autentica eseguendo il login.                                                   |
+| PRINCIPALE        | 2. L'utente va nella schermata di gestione annunci.                                            |
+|                   | 3. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili.                 |
++-------------------+------------------------------------------------------------------------------------------------+
+| SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
+| ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
++-------------------+------------------------------------------------------------------------------------------------+
+| REQUISITI NON     | Protezione dei dati, velocità delle operazioni di accesso ai dati, semplicità d'uso.           |
 | FUNZIONALI        |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | PUNTI APERTI      |                                                                                                |
@@ -288,70 +330,33 @@
 
 
 +-------------------+------------------------------------------------------------------------------------------------+
-| TITOLO            |                                                                                                |
+| TITOLO            | Notifica utente                                                                                 |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| DESCRIZIONE       |                                                                                                |
-|                   |                                                                                                |
+| DESCRIZIONE       | Notifica l'utente privato alla pubblicazione di un annuncio comatibile con filtri di ricerca     |
+|                   | salvati.                                                                                       |
 +-------------------+------------------------------------------------------------------------------------------------+
-| ATTORI            |                                                                                                |
-|                   |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| RELAZIONI         |                                                                                                |
-|                   |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| PRECONDIZIONI     |                                                                                                |
-|                   |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| POSTCONDIZIONI    |                                                                                                |
-|                   |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| SCENARIO          |                                                                                                |
-| PRINCIPALE        |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| SCENARI           |                                                                                                |
-| ALTERNATIVI       |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| REQUISITI NON     |                                                                                                |
-| FUNZIONALI        |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| PUNTI APERTI      |                                                                                                |
-|                   |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-
-
-
-
-
-
-
-
-+-------------------+------------------------------------------------------------------------------------------------+
-| TITOLO            |                                                                                                |
-|                   |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| DESCRIZIONE       |                                                                                                |
-|                   |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| ATTORI            |                                                                                                |
+| ATTORI            | Privato, Nuovo annuncio compatibile                                                            |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | RELAZIONI         |                                                                                                |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| PRECONDIZIONI     |                                                                                                |
+| PRECONDIZIONI     | L'utente è registrato come privato.                                                            |
+|                   | L'utente ha salvato dei filtri di ricerca ed ha abilitato le notifiche.                          |
++-------------------+------------------------------------------------------------------------------------------------+
+| POSTCONDIZIONI    | L'utente riceve una email contenente un link dell'annuncio.                                    |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| POSTCONDIZIONI    |                                                                                                |
-|                   |                                                                                                |
-+-------------------+------------------------------------------------------------------------------------------------+
-| SCENARIO          |                                                                                                |
-| PRINCIPALE        |                                                                                                |
+| SCENARIO          | 1. Si verifica l'evento 'Nuovo annuncio compatibile'.                                           |
+| PRINCIPALE        | 2. Il sistema seleziona tutti gli account compatibili con l'annuncio in base ai filtri salvati  |
+|                   | 3. Il sistema comunica tramite email dati e link dell'annuncio ad ognuno degli utenti          |
+|                   |    selezionati.                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           |                                                                                                |
 | ALTERNATIVI       |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| REQUISITI NON     |                                                                                                |
+| REQUISITI NON     | Protezione dei dati e della privacy                                                            |
 | FUNZIONALI        |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | PUNTI APERTI      |                                                                                                |
