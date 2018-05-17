@@ -53,7 +53,7 @@ VOCABOLARIO
 |    AFFITTUARIO    | Utente che cerca tra gli annunci.                |                                             |
 |                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
-|     ANNUNCIO      | Pubblcazione di un'offerta immobiliare.          | INSERZIONE                                  |
+|     ANNUNCIO      | Pubblcazione di un'offerta immobiliare.           | INSERZIONE                                  |
 |                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |  CARATTERISTICHE  | Attributi di un utente privato.                  | ESIGENZE                                    |
