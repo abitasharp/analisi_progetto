@@ -41,6 +41,9 @@ VOCABOLARIO
 |      UTENTE       | Persona che utilizza la piattaforma. Può         | LOCATARIO, AFFITTUARIO, PRIVATO, AZIENDA    |
 |                   | essere registrato o meno.                        |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
+|   PROFILO UTENTE  | Insieme di dati e informazioni personalizzabili  | ACCOUNT                                     |
+|                   | relativi all'utente.                             |                                             |
++-------------------+--------------------------------------------------+---------------------------------------------+
 |    VISITATORE     | Utente non registrato.                           |                                             |
 |                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
@@ -56,14 +59,14 @@ VOCABOLARIO
 |    AFFITTUARIO    | Utente che cerca tra gli annunci.                |                                             |
 |                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
-|     ANNUNCIO      | Pubblcazione di un'offerta immobiliare.           | INSERZIONE                                  |
+|     ANNUNCIO      | Pubblcazione di un'offerta immobiliare.          | INSERZIONE                                  |
 |                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |  CARATTERISTICHE  | Attributi di un utente privato.                  | ESIGENZE                                    |
 |                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
-|     REQUISITI     | Insieme di attributi di un annuncio che          |                                             |                                             
-|                   | gestiscono la compatibilità con gli utenti.      |                                             |                                              
+|     REQUISITI     | Insieme di attributi di un annuncio che          |                                             |                   
+|                   | gestiscono la compatibilità con gli utenti.      |                                             |                   
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |     RECAPITI      | Informazioni di contatto.                        |                                             |
 |                   |                                                  |                                             |
