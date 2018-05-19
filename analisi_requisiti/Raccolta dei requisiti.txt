@@ -41,7 +41,7 @@ VOCABOLARIO
 |      UTENTE       | Persona che utilizza la piattaforma. Può         | LOCATARIO, AFFITTUARIO, PRIVATO, AZIENDA    |
 |                   | essere registrato o meno.                        |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
-|      PROFILO      | Insieme di dati e preferenxze personalizzabili   | ACCOUNT                                     |
+|      PROFILO      | Insieme di dati e preferenze personalizzabili   | ACCOUNT                                     |
 |                   | relativi all'utente.                             |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |    VISITATORE     | Utente non registrato.                           |                                             |
