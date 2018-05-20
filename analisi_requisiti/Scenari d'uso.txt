@@ -2,7 +2,7 @@
 | TITOLO            | Login                                                                                          |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| DESCRIZIONE       | Permette di accedere al sisitema.                                                              |
+| DESCRIZIONE       | Permette di autenticarsi come utente registrato.                                               |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | ATTORI            | Visitatore, Utente registrato                                                                  |
@@ -18,10 +18,10 @@
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARIO          | 1. L'utente inserisce le credenziali di accesso al sistema.                                    |
-| PRINCIPALE        | 2. Il sistema dopo le opportune verifiche presenta l'opportuna schermata iniziale.              |
+| PRINCIPALE        | 2. Il sistema dopo le opportune verifiche presenta l'opportuna schermata iniziale.             |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. Credenziali non riconosciute                                                                |
-| ALTERNATIVI       |   1. Il sistema dopo le opportune verifiche presenta nuovamente la schermata di accesso.        |
+| ALTERNATIVI       |   1. Il sistema dopo le opportune verifiche presenta nuovamente la schermata di accesso.       |
 +-------------------+------------------------------------------------------------------------------------------------+
 | REQUISITI NON     | Protezione dei dati                                                                            |
 | FUNZIONALI        |                                                                                                |
@@ -81,17 +81,146 @@
 
 
 
+
 +-------------------+------------------------------------------------------------------------------------------------+
-| TITOLO            | Gestione annunci                                                                               |
+| TITOLO            | Gestione profilo                                                                               |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| DESCRIZIONE       | Gestione di tutte le operazioni che l'utente registrato può effettuare sugli annunci.           |
+| DESCRIZIONE       | Permette all'utente di interfacciarsi con dati e preferenze inseriti nella registrazione       |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | ATTORI            | Utente registrato                                                                              |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| RELAZIONI         | Crea, Chiudi, Modifica, Cerca Cronologia, Login                                                 |
+| RELAZIONI         | Modifica profilo, login, logout                                                                |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| PRECONDIZIONI     | L'utente è registrato nella piattaforma.                                                       |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| POSTCONDIZIONI    |                                                                                                |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| SCENARIO          | 1.Login.                                                                                       |      
+| PRINCIPALE        | 2.L'utente accede alla schermata di gestione profilo.                                          |
+|                   | 3.L'utente può visualizzare i dati e le preferenze inserite nella registrazione.               |
+|                   | 4.L'utente può scegliere di modificare uno o più elementi del profilo. Il sistema lo           |
+|                   |   reindirizza alla schermata aggiornata di gestione profilo.                                   |
++-------------------+------------------------------------------------------------------------------------------------+
+| SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
+| ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
++-------------------+------------------------------------------------------------------------------------------------+
+| REQUISITI NON     | Protezione dei dati e privacy, semplicità d'uso.                                               |
+| FUNZIONALI        |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| PUNTI APERTI      |                                                                                                |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+
+
+
+
+
+
+
+
+
++-------------------+------------------------------------------------------------------------------------------------+
+| TITOLO            | Logout                                                                                         |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| DESCRIZIONE       | Chiude la sessione di utente registrato.                                                       |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| ATTORI            | Utente registrato                                                                              |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| RELAZIONI         | Gestione profilo                                                                               |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| PRECONDIZIONI     | L'utente è registrato nella piattaforma.                                                       |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| POSTCONDIZIONI    | La sessione è terminata.                                                                       |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| SCENARIO          | 1.L'utente si interfaccia con la gestione profilo.                                             |      
+| PRINCIPALE        | 2.L'utente sceglie di terminare la sessione.                                                   |    
++-------------------+------------------------------------------------------------------------------------------------+
+| SCENARI           | A.La sessione è già scaduta e l'utente cerca di fare il logout                                 |
+| ALTERNATIVI       |  1.Il sistema notifica l'utente della disconnessione già avvenuta.                             |
++-------------------+------------------------------------------------------------------------------------------------+
+| REQUISITI NON     | Protezione dei dati e semplicità d'uso. Velocità di operazione per l'accesso ai dati.          |
+| FUNZIONALI        |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| PUNTI APERTI      |                                                                                                |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+
+
+
+
+
+
+
+
+
++-------------------+------------------------------------------------------------------------------------------------+
+| TITOLO            | Modifica profilo                                                                               |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| DESCRIZIONE       | L'utente modifica uno o più elementi del profilo.                                              |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| ATTORI            | Utente registrato                                                                              |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| RELAZIONI         | Gestione profilo                                                                               |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| PRECONDIZIONI     | L'utente è registrato nella piattaforma inserendo dati e preferenze.                           |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| POSTCONDIZIONI    | Il contenuto del profilo viene aggiornato.                                                     |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| SCENARIO          | 1. L'utente ha effettuato il login.                                                            |      
+| PRINCIPALE        | 2. L'utente va nella pagina di gestione profilo.                                               |
+|                   | 3. L'utente modifica il contenuto di uno più campi (modificabili).                             |
+|                   | 4. Il sistema notifica l'utente del successo dell'operazione e aggiorna il contenuto della     |
+|                   |    pagina con le modifiche apportate.                                                          |  
++-------------------+------------------------------------------------------------------------------------------------+
+| SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
+| ALTERNATIVI       |  1. L'utente è rediretto nella schermata di login.                                             |
+|                   | B. L'utente vuole modificare un contenuto non modificabile                                     |
+|                   |  1. Il sistema notifica l'utente del fallimento dell'operazione.                               |
++-------------------+------------------------------------------------------------------------------------------------+
+| REQUISITI NON     | Velocità delle operazioni di accesso ai dati. Protezione di dati e privacy e semplicità d'uso. |
+| FUNZIONALI        | Velocità di memorizzazione.                                                                    |
++-------------------+------------------------------------------------------------------------------------------------+
+| PUNTI APERTI      |                                                                                                |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+
+
+
+
+
+
+
+
+
++-------------------+------------------------------------------------------------------------------------------------+
+| TITOLO            | Gestione annunci                                                                               |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| DESCRIZIONE       | Gestione di tutte le operazioni che l'utente registrato può effettuare sugli annunci.          |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| ATTORI            | Utente registrato                                                                              |
+|                   |                                                                                                |
++-------------------+------------------------------------------------------------------------------------------------+
+| RELAZIONI         | Crea, Chiudi, Modifica, Cerca Cronologia, Login                                                |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | PRECONDIZIONI     | L'utente è registrato nella piattaforma.                                                       |
@@ -103,11 +232,10 @@
 | SCENARIO          | 1. Login                                                                                       |
 | PRINCIPALE        | 2. L'utente accede alla schermata di gestione annunci.                                         |
 |                   | 3. L'utente può scegliere di creare un annuncio. Il sistema lo reindirizza all'apposita        |
-|                   |   schermata.                                                                                   |
-|                   | 4 L'utente può scegliere di modificare un annuncio aperto in precedenza. Il sistema lo          |
-|                   |   reindirizza all'apposita schermata.                                                          |
-|                   | 5 L'utente può scegliere di chiudere un annuncio aperto in precedenza.                         |
-|                   | 6. L'utente può navigare nella cronologia dei suoi annunci.                                    |
+|                   |    schermata.                                                                                  |
+|                   | 4. L'utente può scegliere di modificare un annuncio aperto in precedenza. Il sistema lo        |
+|                   |    reindirizza all'apposita schermata.                                                         |
+|                   | 5. L'utente può scegliere di chiudere un annuncio aperto in precedenza.                        |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
 | ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
@@ -144,22 +272,22 @@
 | POSTCONDIZIONI    | L'annuncio è visibile sulla piattaforma.                                                       |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARIO          | 1. L'utente ha effettuato il login.                                                             |
+| SCENARIO          | 1. L'utente ha effettuato il login.                                                            |
 | PRINCIPALE        | 2. L'utente va nella schermata di creazione annunci.                                           |
 |                   | 3. L'utente inserisce i dati dell'annuncio.                                                    |
-|                   | 4. L'utente eventualmente aggiunge delle restrizioni sugli affittuari e/o foto dell'immobile.    |                   
+|                   | 4. L'utente eventualmente aggiunge delle restrizioni sugli affittuari e/o foto dell'immobile.  |          
 |                   | 5. L'utente conclude l'inserimento dei dati e il sistema pubblica l'annuncio sulla             |
 |                   |    piatttaforma.                                                                               |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
 | ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
 |                   | B. L'utente non ha inserito tutti i dati obbligatori                                           |
-|                   |   1. L'utente viene notificato dell'errore ed invitato ad inserire i dati mancanti.             |
+|                   |   1. L'utente viene notificato dell'errore ed invitato ad inserire i dati mancanti.            |
 +-------------------+------------------------------------------------------------------------------------------------+
 | REQUISITI NON     | Protezione dei dati, velocità delle operazioni di memorizzazione, semplicità d'uso.            |
 | FUNZIONALI        |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| PUNTI APERTI      | Proteggere l'operazione tramite test di Turing (es. CAPTCHA) al fine di impedirne l'uso         |
+| PUNTI APERTI      | Proteggere l'operazione tramite test di Turing (es. CAPTCHA) al fine di impedirne l'uso        |
 |                   | improprio.                                                                                     |
 +-------------------+------------------------------------------------------------------------------------------------+
 
@@ -250,10 +378,10 @@
 
 
 +-------------------+------------------------------------------------------------------------------------------------+
-| TITOLO            | Modifica                                                                                        |
+| TITOLO            | Modifica                                                                                       |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| DESCRIZIONE       | L'utente modifica un annuncio precedentemente pubblicato.                                       |
+| DESCRIZIONE       | L'utente modifica un annuncio precedentemente pubblicato.                                      |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | ATTORI            | Utente registrato                                                                              |
@@ -268,10 +396,10 @@
 | POSTCONDIZIONI    | Il contenuto dell'annuncio viene aggiornato.                                                   |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARIO          | 1. L'utente ha effettuato il login.                                                             |
+| SCENARIO          | 1. L'utente ha effettuato il login.                                                            |
 | PRINCIPALE        | 2. L'utente va nella schermata di gestione annunci.                                            |
-|                   | 3. L'utente sceglie un annuncio aperto e lo modifica.                                           |
-|                   | 4. Il sistema notifica il successo dell'operazione.                                             |
+|                   | 3. L'utente sceglie un annuncio aperto e lo modifica.                                          |
+|                   | 4. Il sistema notifica il successo dell'operazione.                                            |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
 | ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
@@ -356,7 +484,7 @@
 | SCENARI           |                                                                                                |
 | ALTERNATIVI       |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| REQUISITI NON     | Protezione dei dati e della privacy                                                            |
+| REQUISITI NON     | Protezione dei dati e della privacy.                                                           |
 | FUNZIONALI        |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | PUNTI APERTI      |                                                                                                |
