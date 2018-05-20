@@ -1,25 +1,18 @@
-Abita#
+Abita #
 
-Abitasharp è una piattaforma web per la pubblicazione ed il confronto di annunci immobiliari a Bologna finalizzata a semplificare l’interazione tra affittuario e locatore.
+Abitasharp è una piattaforma web per la pubblicazione ed il confronto di annunci immobiliari finalizzata a semplificare l’interazione tra affittuario e locatore.
 
-Il servizio permette
+Il servizio permette di creare e navigare tra gli annunci, filtrandoli in base alla tipologia dell'annuncio (casa, stanza, posto letto...), alle caratteristiche dell'immobile (locazione, costo...) e ai vincoli imposti dal locatore sugli affittuari (fumatori, erasmus, animali...).
 
-agli utenti registrati di:
+Per creare un annuncio è necessario registrarsi: la registrazione può avvenire a nome di un privato o di una azienda (es. agenzia immobiliare).
 
-    - pubblicare un annuncio (casa, stanza o posto letto) con la possibilità di specificare vari requisiti (no fumatori, no animali, ecc.)
-      
-    - cercare un immobile filtrando quelli disponibili secondo più criteri (prezzo, zona,  ecc.) ed eventualmente contattare il locatore
-      
-    - ricevere notifiche nel caso venga pubblicato un annuncio i cui requisiti rispettino il proprio profilo
+Il servizio permette agli utenti registrati di:
 
-agli utenti non registrati di:
-
-    - navigare tra le varie offerte, senza la possibilità di contattare il locatore
-      
-    - registrarsi al servizio ☻
-
-La registrazione consiste nell’inserimento e nella validazione dei propri dati personali.
-L’utente in seguito viene invitato a definire le proprie caratteristiche (modificabili successivamente), che andranno a confrontarsi coi requisiti specificati negli annunci dai locatori.
+    - pubblicare un annuncio
+          
+    - [utente privato] personalizzare il proprio profilo salvando i filtri di ricerca 
+    
+    - [utente privato] ricevere notifiche nel caso venga pubblicato un annuncio i cui requisiti rispettino il proprio profilo
 
 Per pubblicare un annuncio l’utente registrato dovrà specificare:
 
