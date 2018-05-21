@@ -4,7 +4,7 @@ Abitasharp è una piattaforma web per la pubblicazione ed il confronto di annunc
 
 Il servizio permette di creare e navigare tra gli annunci, filtrandoli in base alla tipologia dell'annuncio (casa, stanza, posto letto...), alle caratteristiche dell'immobile (locazione, costo...) e ai vincoli imposti dal locatore sugli affittuari (fumatori, erasmus, animali...).
 
-Per creare un annuncio è necessario registrarsi: la registrazione può avvenire a nome di un privato o di una azienda (es. agenzia immobiliare).
+Per creare un annuncio è necessario registrarsi: la registrazione può avvenire a nome di un privato o di una azienda (agenzia immobiliare).
 
 Il servizio permette agli utenti registrati di:
 
