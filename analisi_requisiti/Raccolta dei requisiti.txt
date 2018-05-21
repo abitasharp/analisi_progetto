@@ -10,6 +10,9 @@ da applicare come filtri di ricerca.
 -L'azienda al momento della registrazione deve inserire i dati dell'attività (nome, email, password, numero di telefono, partita
 iva).
 
+-L'utente registrato sulla piattaforma ha a disposizione un'area dedicata alla gestione del proprio profilo personale, dalla
+quale può modificare le informazioni generali e di contatto (nome, email, numero telefonico), modificare le proprie caratteristiche secondarie da applicare alla ricerca di immobili, abilitare o disabilitare la ricezione di notifiche ed eventualmente chiudere il proprio account.
+
 -Il privato ha la possibilità di visulizzare negli annunci i recapiti del locatario e di ricevere notifiche (tramite email) che 
 lo informino riguardo nuove inserzioni corrispondenti alle sue esigenze. Esso ha inoltre la possibilità di seguire gli annunci
 aggiungendoli ad una lista di preferiti.
@@ -21,11 +24,12 @@ locatari.
 prezzo, periodo, note (facoltativo). Successivamente può specificare i requisiti  dell'affittuario/i  (genere, fumatore, erasmus, 
 animali, studente, lavoratore, famiglia). Inoltre può allegare delle foto.
 
--L'affittuario al momento della ricerca può specificare la tipologia, la zona, il prezzo massimo e il periodo di disponibilità degli
-immobili da visualizzare.
+- L'affittuario al momento della ricerca può specificare la tipologia, la zona, il prezzo massimo e il periodo di disponibilità degli immobili da visualizzare.
 
--Gli annunci rimangono attivi sulla piattaforma per una durata massima scelta dal locatario fra varie opzioni. E' responsabilità 
+- Gli annunci rimangono attivi sulla piattaforma per una durata massima scelta dal locatario fra varie opzioni. E' responsabilità 
 dello stesso chiuderli una volta trovato l'affituario/i.
+
+- ???? Gli utenti possono cercare tra i profili utente ed eventualmente visualizzare tutti gli annunci aperti pubblicati da un determinato utente. ????
  
 - La valuta di riferimento è l'euro.
 
@@ -37,6 +41,9 @@ VOCABOLARIO
 +===================+==================================================+=============================================+
 |      UTENTE       | Persona che utilizza la piattaforma. Può         | LOCATARIO, AFFITTUARIO, PRIVATO, AZIENDA    |
 |                   | essere registrato o meno.                        |                                             |
++-------------------+--------------------------------------------------+---------------------------------------------+
+|      PROFILO      | Insieme di dati e preferenze personalizzabili    | ACCOUNT                                     |
+|                   | relativi all'utente.                             |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |    VISITATORE     | Utente non registrato.                           |                                             |
 |                   |                                                  |                                             |
@@ -59,8 +66,8 @@ VOCABOLARIO
 |  CARATTERISTICHE  | Attributi di un utente privato.                  | ESIGENZE                                    |
 |                   |                                                  |                                             |
 +-------------------+--------------------------------------------------+---------------------------------------------+
-|     REQUISITI     | Insieme di attributi di un annuncio che          |                                             |                                             
-|                   | gestiscono la compatibilità con gli utenti.      |                                             |                                              
+|     REQUISITI     | Insieme di attributi di un annuncio che          |                                             |                   
+|                   | gestiscono la compatibilità con gli utenti.      |                                             |                   
 +-------------------+--------------------------------------------------+---------------------------------------------+
 |     RECAPITI      | Informazioni di contatto.                        |                                             |
 |                   |                                                  |                                             |
