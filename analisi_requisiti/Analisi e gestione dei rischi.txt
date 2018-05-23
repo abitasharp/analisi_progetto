@@ -17,7 +17,7 @@ TABELLA VALUTAZIONE DEI BENI
 |                   | e dettagli dell'inserzione (foto, zona,..).    | presente.                              |
 +-------------------+------------------------------------------------+----------------------------------------+
 |   Informazioni    | Medio. Contiene contatto e-mail dell'utente    | Medio. Perdita di immagine se il       |
-|    notifiche      | e contenuto del messaggio inviato.             | contenuto del messaggio è errato e se  | 
+|    notifiche      | e contenuto del messaggio inviato.             | contenuto del messaggio è errato e se  |
 |                   |                                                | dovessero andare persi i contatti.     |
 +-------------------+------------------------------------------------+----------------------------------------+
 |   Informazioni    | Basso. Contenuti inseriti dall'utente riguardo | Basso. Perdita d'immagine se gli       |
@@ -61,7 +61,7 @@ ANALISI TECNOLOGICA DELLA SICUREZZA
 +==========================+==================================================================================+
 |       TECNOLOGIA         |                             VULNERABILITÀ                                        |
 +==========================+==================================================================================+
-| Autentticazione          | -Password banali                                                                 |
+| Autenticazione           | -Password banali                                                                 |
 | Username/Password        | -Utente rivela volontariamente la password                                       |
 |                          | -Utente rivela la password a causa di un attacco di Ingegneria Sociale           |
 +--------------------------+----------------------------------------------------------------------------------+
