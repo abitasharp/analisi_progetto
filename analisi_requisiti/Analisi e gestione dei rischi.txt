@@ -30,20 +30,27 @@ TABELLA MINACCE/CONTROLLI
 +===================+============================+============================+===============================+
 |     MINACCIA      |        PROBABILITÀ         |          CONTROLLO         |          FATTIBILITÀ          |
 +===================+============================+============================+===============================+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
+| Furto credenziali | Alta. Lo username è fissato| Accesso da macchine sicure | Basso costo di realizzazione  |
+|      utente       | e facile da identificare.  |                            | ma attenzione se le macchine  |
+|                   |                            |                            | vengono lasciate incustodite. |
+|                   |                            |____________________________|_______________________________|
+|                   |                            | Log delle Operazioni.      | Basso costo implementatvo.    |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
+| Intercettazione   | Alta. Il sistema è         | Cifratura delle            |<Il costo dipende dal tipo di  |
+|  comunicazioni    | distribuito client/server  | comunicazioni.             | cifratura scelta. Basso se è  |
+|                   | e avvengono molte          |                            | simmetrica. Alto se è         |
+|                   | interazioni fra i diversi  |                            | asimmetrica poiché occorre il |
+|                   | client e server.           |                            | rilascio di coppie di chiavi  |
+|                   |                            |                            | da un ente di certificazione. |
+|                   |                            |____________________________|_______________________________|
+|                   |                            | Log di tutte le Operazioni | Basso costo implementativo    |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
+|Furto informazioni |                            |                            |                               |
+|     annunci       |                            |                            |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
-+-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
+|       DoS         | Bassa                      | Progettazione adeguata,    | Basso costo. Impossibile      |
+|                   |                            | controllo e limitazione    | prevedere un DoS.             |
+|                   |                            | degli accessi.             |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
 |                   |                            |                            |                               |
 |                   |                            |                            |                               |
@@ -54,21 +61,24 @@ ANALISI TECNOLOGICA DELLA SICUREZZA
 +==========================+==================================================================================+
 |       TECNOLOGIA         |                             VULNERABILITÀ                                        |
 +==========================+==================================================================================+
-|                          |                                                                                  |
-|                          |                                                                                  |
+| Autentticazione          | -Password banali                                                                 |
+| Username/Password        | -Utente rivela volontariamente la password                                       |
+|                          | -Utente rivela la password a causa di un attacco di Ingegneria Sociale           |
++--------------------------+----------------------------------------------------------------------------------+
+| Cifratura comunicazioni  | Le vulnerabilità dipendono dal tipo di cifratura.                                |
+|                          | Cifratura simmetrica:                                                            |
+|                          |  -tempo di vita della chiave. Più informazioni cifrate con la stessa chiave, più |
+|                          |   materiale viene offerto per l'analisi del testo ad un attaccante.              |
+|                          |  -lunghezza della chiave                                                         | 
+|                          |  -Memorizzazazione della chiave                                                  |
+|                          | Cifratura asimmetrica:                                                           |
+|                          |  -memorizzazione della chiave privata                                            |
++--------------------------+----------------------------------------------------------------------------------+
+| Archittettura            | -DoS                                                                             |
+| client/server            | -Man in the Middle                                                               |
+|                          | -Sniffing delle comunicazioni                                                    |
 +--------------------------+----------------------------------------------------------------------------------+
 |                          |                                                                                  |
 |                          |                                                                                  |
 +--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
-|                          |                                                                                  |
-+--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
-|                          |                                                                                  |
-+--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
-|                          |                                                                                  |
-+--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
-|                          |                                                                                  |
-+--------------------------+----------------------------------------------------------------------------------+
+
