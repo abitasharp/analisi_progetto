@@ -4,20 +4,25 @@ TABELLA VALUTAZIONE DEI BENI
 +===================+================================================+========================================+
 |      BENE         |                  VALORE                        |            ESPOSIZIONE                 |
 +===================+================================================+========================================+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
+|     Sistema       | Alto. Supporto a tutta la gestione del sito.   | Alta. Perdita di dati e immagine.      |
+|   informativo     |                                                | Perdita finanziaria.                   |
 +-------------------+------------------------------------------------+----------------------------------------+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
+|   Informazioni    | Alto. Dati personali dell'utente e preferenze  | Alta. Perdita di immagine se venissero |
+| utente registrato | riguardo i requisiti dell'annuncio.            | divulgati i dati personali dell'utente.|
+|                   |                                                | Perdita finanziaria se venissero rubate|
+|                   |                                                | le credenziali dell'utente.            |
 +-------------------+------------------------------------------------+----------------------------------------+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
+|   Informazioni    | Medio. Contiene tutte le informazioni relative | Media. Perdita di immagine se          |
+|     annuncio      | agli annunci compreso il contatto del locatario| l'annuncio che viene selezionato non è |
+|                   | e dettagli dell'inserzione (foto, zona,..).    | presente.                              |
 +-------------------+------------------------------------------------+----------------------------------------+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
+|   Informazioni    | Medio. Contiene contatto e-mail dell'utente    | Medio. Perdita di immagine se il       |
+|    notifiche      | e contenuto del messaggio inviato.             | contenuto del messaggio è errato e se  | 
+|                   |                                                | dovessero andare persi i contatti.     |
 +-------------------+------------------------------------------------+----------------------------------------+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
+|   Informazioni    | Basso. Contenuti inseriti dall'utente riguardo | Basso. Perdita d'immagine se gli       |
+|    preferenze     | gli annunci che vuole tenere in primo piano.   | annunci non presentassero preferenze.  |
+|      ?????        |                                                |                                        |
 +-------------------+------------------------------------------------+----------------------------------------+
 
 TABELLA MINACCE/CONTROLLI
