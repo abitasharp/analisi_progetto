@@ -30,13 +30,13 @@ TABELLA MINACCE/CONTROLLI
 +===================+============================+============================+===============================+
 |     MINACCIA      |        PROBABILITÀ         |          CONTROLLO         |          FATTIBILITÀ          |
 +===================+============================+============================+===============================+
-| Furto credenziali | Alta. Lo username è fissato| Accesso da macchine sicure | Basso costo di realizzazione  |
-|      utente       | e facile da identificare.  |                            | ma attenzione se le macchine  |
-|                   |                            |                            | vengono lasciate incustodite. |
-|                   |                            |____________________________|_______________________________|
-|                   |                            | Log delle Operazioni.      | Basso costo implementatvo.    |
+| Furto credenziali |                            |                            |                               |
+|      utente       |                            |                            |                               |
+|                   |                            |                            |                               |
+|                   |                            +----------------------------+-------------------------------+
+|                   |                            |                            |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-| Intercettazione   | Alta. Il sistema è         | Cifratura delle            |<Il costo dipende dal tipo di  |
+| Intercettazione   | Alta. Il sistema è         | Cifratura delle            | Il costo dipende dal tipo di  |
 |  comunicazioni    | distribuito client/server  | comunicazioni.             | cifratura scelta. Basso se è  |
 |                   | e avvengono molte          |                            | simmetrica. Alto se è         |
 |                   | interazioni fra i diversi  |                            | asimmetrica poiché occorre il |
@@ -45,14 +45,14 @@ TABELLA MINACCE/CONTROLLI
 |                   |                            |____________________________|_______________________________|
 |                   |                            | Log di tutte le Operazioni | Basso costo implementativo    |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-|Furto informazioni |                            |                            |                               |
-|     annunci       |                            |                            |                               |
-+-------------------+----------------------------+----------------------------+-------------------------------+
 |       DoS         | Bassa                      | Progettazione adeguata,    | Basso costo. Impossibile      |
 |                   |                            | controllo e limitazione    | prevedere un DoS.             |
 |                   |                            | degli accessi.             |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
+| annunci malevoli  |                            |                            |                               |
+|  (xss)            |                            |                            |                               |
++-------------------+----------------------------+----------------------------+-------------------------------+
+|  Spam di annunci? |                            |                            |                               |
 |                   |                            |                            |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
 
@@ -78,7 +78,7 @@ ANALISI TECNOLOGICA DELLA SICUREZZA
 | client/server            | -Man in the Middle                                                               |
 |                          | -Sniffing delle comunicazioni                                                    |
 +--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
+| Sito web                 | - Cross-site scripting                                                           |
 |                          |                                                                                  |
 +--------------------------+----------------------------------------------------------------------------------+
 
