@@ -43,7 +43,7 @@
 | TITOLO            | Garantire protezione                                                                           |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| DESCRIZIONE       | I	dati devono	essere	protetti                                                                 |
+| DESCRIZIONE       | I	dati devono	essere protetti                                                                  |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | MISUSE CASE       | Sniffing informazioni, Furto credenziali, Frode                                                |
