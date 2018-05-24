@@ -23,11 +23,13 @@ TABELLA MINACCE/CONTROLLI
 +===================+============================+============================+===============================+
 |     MINACCIA      |        PROBABILITÀ         |          CONTROLLO         |          FATTIBILITÀ          |
 +===================+============================+============================+===============================+
-| Furto credenziali |                            |                            |                               |
+| Furto credenziali | Media                      |                            | Basso costo implementativo    |
 |      utente       |                            |                            |                               |
 |                   |                            |                            |                               |
-|                   |                            +----------------------------+-------------------------------+
-|                   |                            |                            |                               |
++-------------------+----------------------------+----------------------------+-------------------------------+
+| Furto credenziali | Alta                       | Password sicure obbligato- | Basso costo implementativo    |
+|  amministratore   |                            | rie, distribuite a         |                               |
+|                   |                            | personale ristretto.       |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
 | Intercettazione   | Alta. Il sistema è         | Cifratura delle            | Il costo dipende dal tipo di  |
 |  comunicazioni    | distribuito client/server  | comunicazioni.             | cifratura scelta. Basso se è  |
@@ -42,10 +44,7 @@ TABELLA MINACCE/CONTROLLI
 |                   |                            | controllo e limitazione    | prevedere un DoS.             |
 |                   |                            | degli accessi.             |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-| annunci malevoli  |                            |                            |                               |
-|  (xss)            |                            |                            |                               |
-+-------------------+----------------------------+----------------------------+-------------------------------+
-|  Spam di annunci? |                            |                            |                               |
+| Annunci malevoli  |                            |                            |                               |
 |                   |                            |                            |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
 
