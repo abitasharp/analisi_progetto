@@ -1,0 +1,61 @@
+<b>LISTA REQUISITI</b>
+
+- Gli utenti hanno la possibilità di registrarsi come privati o come azienda.
+
+- Il privato al momento della registrazione deve inserire i propri dati personali (nome, cognome, email, password,  numero di
+telefono, data di nascita). Successivamente alla registrazione e in qualsiasi altro momento l'utente ha la possibilità di 
+modificare delle caratteristiche proprie secondarie (genere, fumatore, erasmus, animali domestici, studente, lavoratore, famiglia)
+da applicare come filtri di ricerca.
+
+- L'azienda al momento della registrazione deve inserire i dati dell'attività (nome, email, password, numero di telefono, partita
+iva).
+
+- L'utente registrato sulla piattaforma ha a disposizione un'area dedicata alla gestione del proprio profilo personale, dalla
+quale può modificare le informazioni generali e di contatto (nome, email, numero telefonico), modificare le proprie caratteristiche secondarie da applicare alla ricerca di immobili, abilitare o disabilitare la ricezione di notifiche ed eventualmente chiudere il proprio account.
+
+- Il privato ha la possibilità di visulizzare negli annunci i recapiti del locatario e di ricevere notifiche (tramite email) che 
+lo informino riguardo nuove inserzioni corrispondenti alle sue esigenze. Esso ha inoltre la possibilità di seguire gli annunci
+aggiungendoli ad una lista di preferiti.
+
+- Il visitatore può visualizzare tutti gli annunci pubblicati sulla piattaforma senza tuttavia poter accedere ai recapiti dei 
+locatari.
+
+- Il locatario alla pubblicazione di un annuncio deve specificare i seguenti attributi dell'immobile: tipologia, indirizzo, 
+prezzo, periodo, note (facoltativo). Successivamente può specificare i requisiti  dell'affittuario/i  (genere, fumatore, erasmus, 
+animali, studente, lavoratore, famiglia). Inoltre può allegare delle foto.
+
+- L'affittuario al momento della ricerca può specificare la tipologia, la zona, il prezzo massimo e il periodo di disponibilità degli immobili da visualizzare.
+
+- Gli annunci rimangono attivi sulla piattaforma per una durata massima scelta dal locatario fra varie opzioni. E' responsabilità 
+dello stesso chiuderli una volta trovato l'affituario/i.
+
+- Gli utenti possono cercare tra i profili utente ed eventualmente visualizzare tutti gli annunci aperti pubblicati da un determinato utente.
+
+- L'utente ha la possibilità di segnalare un annuncio, tali segnalazioni vengono ricevute e gestite dagli amministratori tramite l'apposita dashboard.
+
+- L'amministratore può procedere eliminando l'annuncio o addirittura bannando l'utente che lo ha pubblicato.
+ 
+- La valuta di riferimento è l'euro.
+
+
+<b>VOCABOLARIO</b>
+
+VOCE | DEFINIZIONE | SINONIMI
+-----|-------------|---------
+UTENTE | Persona che utilizza la piattaforma. Può essere registrato o meno. | LOCATARIO, AFFITTUARIO, PRIVATO, AZIENDA
+PROFILO | Insieme di dati e preferenze personalizzabili relativi all'utente | ACCOUNT
+VISITATORE | Utente non registrato. | |
+PRIVATO | Utente registrato come privato. Può contattare i locatari degli annunci. | |
+AZIENDA | Utente registrato come azienda. | ATTIVITA'
+LOCATARIO | Utente registrato che pubblica un annuncio. | |
+AFFITTUARIO | Utente che cerca tra gli annunci. | |
+ANNUNCIO | Pubblcazione di un'offerta immobiliare. | INSERZIONE
+CARATTERISTICHE | Attributi di un utente privato. | ESIGENZE 
+REQUISITI | Insieme di attributi di un annuncio che gestiscono la compatibilità con gli utenti. | |                   
+RECAPITI | Informazioni di contatto. | |
+PREFERITI | Annunci salvati dall'utente. | |
+VALUTA DI RIFERIMENTO | Tipo di moneta usata nella piattaforma. | |
+EURO | Valuta adottata nella Comunità Europea e valuta di riferimento. | |
+PASSWORD | Codice alfanumerico di almeno 8 caratteri. | |
+TIPOLOGIA ANNUNCIO | Categoria immobile (posto letto, stanza, appartamento). | |
+DASHBOARD | Interfaccia che permette all'amministratore di gestire la piattaforma. | PANNELLO DI CONTROLLO |
