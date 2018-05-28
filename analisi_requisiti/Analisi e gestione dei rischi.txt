@@ -44,8 +44,8 @@ TABELLA MINACCE/CONTROLLI
 |                   |                            | controllo e limitazione    | prevedere un DoS.             |
 |                   |                            | degli accessi.             |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-| Annunci malevoli  |                            |                            |                               |
-|                   |                            |                            |                               |
+| Annunci malevoli  | Alta                       | Il sistema deve controllare| Basso costo, implementazione  |
+|                   |                            | l'input dell'utente        | semplice                      |
 +-------------------+----------------------------+----------------------------+-------------------------------+
 
 ANALISI TECNOLOGICA DELLA SICUREZZA
@@ -60,7 +60,7 @@ ANALISI TECNOLOGICA DELLA SICUREZZA
 | Cifratura comunicazioni  | Le vulnerabilità dipendono dal tipo di cifratura.                                |
 |                          | Cifratura simmetrica:                                                            |
 |                          |  -tempo di vita della chiave. Più informazioni cifrate con la stessa chiave, più |
-|                          |   materiale viene offerto per l'analisi del testo ad un attaccante.              |
+|                          |   materiale viene offerto per l'analisi del testo ad un attaccante.               |
 |                          |  -lunghezza della chiave                                                         | 
 |                          |  -Memorizzazazione della chiave                                                  |
 |                          | Cifratura asimmetrica:                                                           |
@@ -68,9 +68,22 @@ ANALISI TECNOLOGICA DELLA SICUREZZA
 +--------------------------+----------------------------------------------------------------------------------+
 | Archittettura            | -DoS                                                                             |
 | client/server            | -Man in the Middle                                                               |
-|                          | -Sniffing delle comunicazioni                                                    |
+|                          | -Sniffing delle comunicazioni                                                      |
 +--------------------------+----------------------------------------------------------------------------------+
 | Sito web                 | - Cross-site scripting                                                           |
 |                          |                                                                                  |
 +--------------------------+----------------------------------------------------------------------------------+
 
+
+
+REQUISITI DI PROTEZIONE DEI DATI
+
+Dall’analisi del rischio si possono evincere i seguenti ulteriori requisiti:
+
+1. Creazione di un log per tracciare:
+  a. tutte le azioni che avvengono sul sistema
+  b. i messaggi scambiati tra le parti del sistema .
+
+2. Individuare una corretta politica di controllo degli accessi.
+
+3. I dati memorizzati e scambiati nel sistema devono essere protetti.
