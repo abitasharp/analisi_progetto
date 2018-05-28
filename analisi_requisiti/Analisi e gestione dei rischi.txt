@@ -87,3 +87,5 @@ Dall’analisi del rischio si possono evincere i seguenti ulteriori requisiti:
 2. Individuare una corretta politica di controllo degli accessi.
 
 3. I dati memorizzati e scambiati nel sistema devono essere protetti.
+
+4. Deve essere possibile risalire alla paternità dei contenuti pubblicati nel sistema.
