@@ -34,9 +34,6 @@ Dall’analisi del rischio si possono evincere i seguenti ulteriori requisiti:
 1. Creazione di un log per tracciare:
   a. tutte le azioni che avvengono sul sistema
   b. i messaggi scambiati tra le parti del sistema .
-
 2. Individuare una corretta politica di controllo degli accessi.
-
 3. I dati memorizzati e scambiati nel sistema devono essere protetti.
-
 4. Deve essere possibile risalire alla paternità dei contenuti pubblicati nel sistema.
