@@ -4,44 +4,48 @@ TABELLA VALUTAZIONE DEI BENI
 +===================+================================================+========================================+
 |      BENE         |                  VALORE                        |            ESPOSIZIONE                 |
 +===================+================================================+========================================+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
+|     Sistema       | Alto. Supporto a tutta la gestione del sito.   | Alta. Perdita di dati e immagine.      |
+|   informativo     |                                                | Perdita finanziaria.                   |
 +-------------------+------------------------------------------------+----------------------------------------+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
+|   Informazioni    | Alto. Dati personali dell'utente e preferenze  | Alta. Perdita di immagine se venissero |
+| utente registrato | riguardo i requisiti dell'annuncio.            | divulgati i dati personali dell'utente.|
+|                   |                                                | Perdita finanziaria se venissero rubate|
+|                   |                                                | le credenziali dell'utente.            |
 +-------------------+------------------------------------------------+----------------------------------------+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
+|   Informazioni    | Medio. Contiene tutte le informazioni relative | Media. Perdita di immagine se          |
+|     annuncio      | agli annunci compreso il contatto del locatario| l'annuncio che viene selezionato non è |
+|                   | e dettagli dell'inserzione (foto, zona,..).    | presente.                              |
 +-------------------+------------------------------------------------+----------------------------------------+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
-+-------------------+------------------------------------------------+----------------------------------------+
-|                   |                                                |                                        |
-|                   |                                                |                                        |
-+-------------------+------------------------------------------------+----------------------------------------+
+
 
 TABELLA MINACCE/CONTROLLI
 
 +===================+============================+============================+===============================+
 |     MINACCIA      |        PROBABILITÀ         |          CONTROLLO         |          FATTIBILITÀ          |
 +===================+============================+============================+===============================+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
-+-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
+| Furto credenziali | Alta                       |                            |                               |
+|      utente       |                            |                            |                               |
 |                   |                            |                            |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
+| Furto credenziali | Alta                       | Password sicure obbligato- | Basso costo implementativo    |
+|  amministratore   |                            | rie, distribuite a         |                               |
+|                   |                            | personale ristretto.       |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
+| Intercettazione   | Alta. Il sistema è         | Cifratura delle            | Il costo dipende dal tipo di  |
+|  comunicazioni    | distribuito client/server  | comunicazioni.             | cifratura scelta. Basso se è  |
+|                   | e avvengono molte          |                            | simmetrica. Alto se è         |
+|                   | interazioni fra i diversi  |                            | asimmetrica poiché occorre il |
+|                   | client e server.           |                            | rilascio di coppie di chiavi  |
+|                   |                            |                            | da un ente di certificazione. |
+|                   |                            |____________________________|_______________________________|
+|                   |                            | Log di tutte le Operazioni | Basso costo implementativo    |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
+|       DoS         | Bassa                      | Progettazione adeguata,    | Basso costo. Impossibile      |
+|                   |                            | controllo e limitazione    | prevedere un DoS.             |
+|                   |                            | degli accessi.             |                               |
 +-------------------+----------------------------+----------------------------+-------------------------------+
-|                   |                            |                            |                               |
-|                   |                            |                            |                               |
+| Annunci malevoli  | Alta                       | Il sistema deve controllare| Basso costo, implementazione  |
+|                   |                            | l'input dell'utente        | semplice                      |
 +-------------------+----------------------------+----------------------------+-------------------------------+
 
 ANALISI TECNOLOGICA DELLA SICUREZZA
@@ -49,21 +53,39 @@ ANALISI TECNOLOGICA DELLA SICUREZZA
 +==========================+==================================================================================+
 |       TECNOLOGIA         |                             VULNERABILITÀ                                        |
 +==========================+==================================================================================+
-|                          |                                                                                  |
+| Autenticazione           | -Password banali                                                                 |
+| Username/Password        | -Utente rivela volontariamente la password                                       |
+|                          | -Utente rivela la password a causa di un attacco di Ingegneria Sociale           |
++--------------------------+----------------------------------------------------------------------------------+
+| Cifratura comunicazioni  | Le vulnerabilità dipendono dal tipo di cifratura.                                |
+|                          | Cifratura simmetrica:                                                            |
+|                          |  -tempo di vita della chiave. Più informazioni cifrate con la stessa chiave, più |
+|                          |   materiale viene offerto per l'analisi del testo ad un attaccante.               |
+|                          |  -lunghezza della chiave                                                         | 
+|                          |  -Memorizzazazione della chiave                                                  |
+|                          | Cifratura asimmetrica:                                                           |
+|                          |  -memorizzazione della chiave privata                                            |
++--------------------------+----------------------------------------------------------------------------------+
+| Archittettura            | -DoS                                                                             |
+| client/server            | -Man in the Middle                                                               |
+|                          | -Sniffing delle comunicazioni                                                      |
++--------------------------+----------------------------------------------------------------------------------+
+| Sito web                 | - Cross-site scripting                                                           |
 |                          |                                                                                  |
 +--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
-|                          |                                                                                  |
-+--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
-|                          |                                                                                  |
-+--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
-|                          |                                                                                  |
-+--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
-|                          |                                                                                  |
-+--------------------------+----------------------------------------------------------------------------------+
-|                          |                                                                                  |
-|                          |                                                                                  |
-+--------------------------+----------------------------------------------------------------------------------+
+
+
+
+REQUISITI DI PROTEZIONE DEI DATI
+
+Dall’analisi del rischio si possono evincere i seguenti ulteriori requisiti:
+
+1. Creazione di un log per tracciare:
+  a. tutte le azioni che avvengono sul sistema
+  b. i messaggi scambiati tra le parti del sistema .
+
+2. Individuare una corretta politica di controllo degli accessi.
+
+3. I dati memorizzati e scambiati nel sistema devono essere protetti.
+
+4. Deve essere possibile risalire alla paternità dei contenuti pubblicati nel sistema.

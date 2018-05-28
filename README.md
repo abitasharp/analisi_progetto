@@ -1,4 +1,5 @@
-Abita #
+# Abstract
+<b>Abita#</b>
 
 Abitasharp è una piattaforma web per la pubblicazione ed il confronto di annunci immobiliari finalizzata a semplificare l’interazione tra affittuario e locatore.
 
@@ -8,14 +9,17 @@ Per creare un annuncio è necessario registrarsi: la registrazione può avvenire
 
 Il servizio permette agli utenti registrati di:
 
-    - pubblicare un annuncio
-          
-    - [utente privato] personalizzare il proprio profilo salvando i filtri di ricerca 
-    
-    - [utente privato] ricevere notifiche nel caso venga pubblicato un annuncio i cui requisiti rispettino il proprio profilo
+- pubblicare un annuncio      
+- [utente privato] personalizzare il proprio profilo salvando i filtri di ricerca    
+- [utente privato] ricevere notifiche nel caso venga pubblicato un annuncio i cui requisiti rispettino il proprio profilo
 
 Per pubblicare un annuncio l’utente registrato dovrà specificare:
 
-    1. tipologia annuncio (casa, stanza, posto letto...)
-    2. caratteristiche immobile (locazione, costo...)
-    3. requisiti affittuari (fumatori, erasmus, animali...)
+1. tipologia annuncio (casa, stanza, posto letto...)
+2. caratteristiche immobile (locazione, costo...)
+3. requisiti affittuari (fumatori, erasmus, animali...)
+
+# Index
+
+1. Analisi dei requisiti
+  1.1. 
