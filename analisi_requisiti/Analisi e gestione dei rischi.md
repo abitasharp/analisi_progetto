@@ -23,7 +23,7 @@ Annunci malevoli | Alta | Il sistema deve controllare l'input utente | Basso cos
 TECNOLOGIA | VULNERABILITÀ
 -----------|--------------
 Autenticazione Username/Password | - Password banali <br/> - Utente rivela volontariamente la password <br/> - Utente rivela la password a causa di un attacco di Ingegneria Sociale
-Cifratura comunicazioni  | Le vulnerabilità dipendono dal tipo di cifratura.<br/>Cifratura simmetrica:<br/> - Tempo di vita della chiave. Più informazioni cifrate con la stessa chiave, più materiale viene offerto per l'analisi del testo ad un attaccante.<br/> - Lunghezza della chiave<br/> - Memorizzazazione della chiave<br/> - Cifratura asimmetrica:<br/> - Memorizzazione della chiave privata
+Cifratura comunicazioni  | Le vulnerabilità dipendono dal tipo di cifratura.<br/>Cifratura simmetrica:<br/> - Tempo di vita della chiave. Più informazioni cifrate con la stessa chiave, più materiale viene offerto per l'analisi del testo ad un attaccante.<br/> - Lunghezza della chiave<br/> - Memorizzazazione della chiave<br/>Cifratura asimmetrica:<br/> - Memorizzazione della chiave privata
 Archittettura client/server | - DoS<br/> - Man in the middle<br/> - Sniffing delle comunicazioni
 Sito web | - Cross-site scripting
 
