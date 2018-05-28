@@ -57,20 +57,20 @@
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARIO          | 1. Il visitatore accede alla sezione di registrazione.                                         |
-| PRINCIPALE        | 2. Il visitatore sceglie il tipo di profilo e inserisce i relativi dati di registrazione.       |
+| PRINCIPALE        | 2. Il visitatore sceglie il tipo di profilo e inserisce i relativi dati di registrazione.      |
 |                   | 3. Il sistema memorizza i dati inseriti, valida l'email e invia una email contenente           |
 |                   |    un link che permette di completare la procedura.                                            |
 |                   | 4. Il sistema abilita l'account all'attivazione del link.                                      |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. L'email inserita non è valida                                                               |
-| ALTERNATIVI       |   1. Il visitatore viene notificato e rediretto alla schermata di registrazione.                |
+| ALTERNATIVI       |   1. Il visitatore viene notificato e rediretto alla schermata di registrazione.               |
 |                   | B. La procedura non viene completata entro 24h (link non pervenuto)                            |
 |                   |   1. Il sistema elimina i dati inseriti annullando la registrazione.                           |
 +-------------------+------------------------------------------------------------------------------------------------+
 | REQUISITI NON     | Protezione di dati e privacy.                                                                  |
 | FUNZIONALI        | Velocità di memorizzazione e semplicità d'uso.                                                 |
 +-------------------+------------------------------------------------------------------------------------------------+
-| PUNTI APERTI      | Proteggere la registrazione tramite test di Turing (es. CAPTCHA) al fine di impedirne l'uso     |
+| PUNTI APERTI      | Proteggere la registrazione tramite test di Turing (es. CAPTCHA) al fine di impedirne l'uso    |
 |                   | improprio.                                                                                     |
 +-------------------+------------------------------------------------------------------------------------------------+
 
@@ -301,7 +301,7 @@
 | TITOLO            | Cerca annunci                                                                                  |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| DESCRIZIONE       | Permette di navigare tra gli annunci della piattaforma filtrandoli secondo vari criteri.        |
+| DESCRIZIONE       | Permette di navigare tra gli annunci della piattaforma filtrandoli secondo vari criteri.       |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | ATTORI            | Utente registrato, Visitatore                                                                  |
@@ -313,13 +313,14 @@
 | PRECONDIZIONI     |                                                                                                |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| POSTCONDIZIONI    | Il sistema mostra tutti gli annunci compatibili con i filtri impostati.                         |
+| POSTCONDIZIONI    | Il sistema mostra tutti gli annunci compatibili con i filtri impostati.                        |
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARIO          | 1. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili.                 |
-| PRINCIPALE        | 2. Se registrato, può salvare le preferenze dei filtri.                                         |
+| SCENARIO          | 1. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili.                |
+| PRINCIPALE        | 2. Se registrato, può salvare le preferenze dei filtri.					     |
+|		    | 3. L'utente visualizza l'annuncio selezionato.                                                 |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARI           | A. L'utente non ha effettuato il login e cerca di visualizare i contatti del locatario di un    |
+| SCENARI           | A. L'utente non ha effettuato il login e cerca di visualizare i contatti del locatario di un   |
 | ALTERNATIVI       |     annuncio                                                                                   |
 |                   |   1. Il sistema reindirizza l'utente alla schermata di login.                                  |
 +-------------------+------------------------------------------------------------------------------------------------+
@@ -341,7 +342,7 @@
 |                   |                                                                                                |
 +-------------------+------------------------------------------------------------------------------------------------+
 | DESCRIZIONE       | L'utente chiude l'annuncio rendendolo non più visibile nella piattaforma e disabilitando       |
-|                   | ulteriori modifiche. L'inserzione sarà comunque visibile nella cronologia annunci.              |
+|                   | ulteriori modifiche. L'inserzione sarà comunque visibile nella cronologia annunci.             |
 +-------------------+------------------------------------------------------------------------------------------------+
 | ATTORI            | Utente registrato                                                                              |
 |                   |                                                                                                |
@@ -355,10 +356,10 @@
 | POSTCONDIZIONI    | L'annuncio selezionato non è più visibile nella piattaforma ma l'utente può vederlo nella      |
 |                   | propria cronologia.                                                                            |
 +-------------------+------------------------------------------------------------------------------------------------+
-| SCENARIO          | 1. L'utente ha effettuato il login.                                                             |
+| SCENARIO          | 1. L'utente ha effettuato il login.                                                            |
 | PRINCIPALE        | 2. L'utente va nella schermata di gestione annunci.                                            |
 |                   | 3. L'utente sceglie un annuncio aperto e lo chiude.                                            |
-|                   | 4. Il sistema notifica il successo dell'operazione.                                             |
+|                   | 4. Il sistema notifica il successo dell'operazione.                                            |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
 | ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
@@ -438,7 +439,7 @@
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARIO          | 1. L'utente si autentica eseguendo il login.                                                   |
 | PRINCIPALE        | 2. L'utente inserisce i filtri di ricerca e naviga tra i profili mostrati dal sistema.         |
-|                   |                                                                                                |
+|                   | 3. L'utente visualizza il profilo selezionato.                                                 |
 +-------------------+------------------------------------------------------------------------------------------------+
 | SCENARI           | A. L'utente non è autenticato o la sessione è scaduta                                          |
 | ALTERNATIVI       |   1. L'utente è rediretto alla schermata di login.                                             |
