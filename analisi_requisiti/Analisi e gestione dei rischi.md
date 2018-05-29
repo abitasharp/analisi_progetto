@@ -1,5 +1,5 @@
 
-<b>TABELLA VALUTAZIONE DEI BENI</b>
+**TABELLA VALUTAZIONE DEI BENI**
 
 BENE | VALORE | ESPOSIZIONE
 -----|--------|------------
@@ -7,7 +7,7 @@ Sistema informativo | Alto. Supporto a tutta la gestione del sito. | Alta. Perdi
 Informazioni utente registrato | Alto. Dati personali dell'utente e preferenze riguardo i requisiti dell'annuncio | Alta. Perdita di immagine se venissero divulgati i dati personali dell'utente. Perdita finanziaria se venissero rubate le credenziali dell'utente.
 Informazioni annuncio | Medio. Contiene tutte le informazioni relative agli annunci compreso il contatto del locatario e dettagli dell'inserzione (foto, zona,..). | Media. Perdita di immagine se l'annuncio che viene selezionato non è presente.
 
-<b>TABELLA MINACCE/CONTROLLI</b>
+**TABELLA MINACCE/CONTROLLI**
 
 MINACCIA | PROBABILITÀ | CONTROLLO | FATTIBILITÀ
 ---------|-------------|-----------|------------
@@ -17,7 +17,7 @@ Intercettazione comunicazioni | Alta. Il sistema è distribuito client/server e 
 DoS | Bassa| Progettazione adeguata, controllo e limitazione degli accessi. | Basso costo. Impossibile prevedere un DoS.
 Annunci malevoli | Alta | Il sistema deve controllare l'input utente | Basso costo, implementazione semplice.
 
-<b>ANALISI TECNOLOGICA DELLA SICUREZZA</b>
+**ANALISI TECNOLOGICA DELLA SICUREZZA**
 
 
 TECNOLOGIA | VULNERABILITÀ
@@ -27,7 +27,7 @@ Cifratura comunicazioni  | Le vulnerabilità dipendono dal tipo di cifratura.<br
 Archittettura client/server | - DoS<br/> - Man in the middle<br/> - Sniffing delle comunicazioni
 Sito web | - Cross-site scripting
 
-<b>REQUISITI DI PROTEZIONE DEI DATI</b>
+**REQUISITI DI PROTEZIONE DEI DATI**
 
 Dall’analisi del rischio si possono evincere i seguenti ulteriori requisiti:
 
