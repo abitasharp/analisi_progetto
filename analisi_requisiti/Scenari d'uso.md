@@ -1,6 +1,6 @@
 | | |
 |-|-|
-TITOLO | Login |
+TITOLO | **Login** |
 DESCRIZIONE | Permette di autenticarsi come utente registrato. |
 ATTORI | Visitatore, Utente registrato |
 RELAZIONI | Registrazione, Gestione annunci |
@@ -14,13 +14,224 @@ PUNTI APERTI | |
 
 | | |
 |-|-|
+TITOLO | **Registrazione** |
+DESCRIZIONE | Il visitatore si registra sulla piattaforma |
+ATTORI | Visitatore|
+RELAZIONI | Login|
+PRECONDIZIONI | |
+POSTCONDIZIONI | I dati dell'utente vengono salvati|
+SCENARIO PRINCPALE | 1. Il visitatore accede alla sezione di registrazione. <br/>2. Il visitatore sceglie il tipo di profilo e inserisce i relativi dati di registrazione. <br/> 3. Il sistema memorizza i dati inseriti, valida l'email e invia una email contenente un link che permette di completare la procedura.<br/>4. Il sistema abilita l'account all'attivazione del link.|
+SCENARI ALTERNATIVI | A. L'email inserita non è valida<br/>1. Il visitatore viene notificato e rediretto alla schermata di registrazione.<br/> B. La procedura non viene completata entro 24h (link non pervenuto) <br/>1. Il sistema elimina i dati inseriti annullando la registrazione.|
+REQUISITI NON FUNZIONALI |Protezione di dati e privacy.<br/> Velocità di memorizzazione e semplicità d'uso.|
+PUNTI APERTI |Proteggere la registrazione tramite test di Turing (es. CAPTCHA) al fine di impedirne l'uso improprio. |
+
+
+
+| | |
+|-|-|
+TITOLO | **Gestione profilo**|
+DESCRIZIONE | Permettere all'utente di interfacciarsi con i dati e preferenze inseriti nella registrazione|
+ATTORI | Utente registrato|
+RELAZIONI |Modifica profilo, Login, Logout |
+PRECONDIZIONI |L'utente è registrato nella piattaforma. |
+POSTCONDIZIONI | |
+SCENARIO PRINCPALE | 1. Login <br/> 2.L'utente accede alla schermata di gestione profilo. <br/>3.L'utente può visualizzare i dati e le preferenze inserite nella registrazione. <br/>4.L'utente può scegliere di modificare uno o più elementi del profilo. Il sistema lo reindirizza alla schermata aggiornata di gestione profilo.
+SCENARI ALTERNATIVI | A. L'utente non è autenticato o la sessione è scaduta <br/> 1. L'utente è rediretto alla schermata di login. |
+REQUISITI NON FUNZIONALI | Protezione dei dati e privacy, semplicità d'uso. |
+PUNTI APERTI | |
+
+
+
+
+| | |
+|-|-|
+TITOLO | **Logout**|
+DESCRIZIONE |Chiusura della sessione utente. |
+ATTORI | Utente registrato|
+RELAZIONI | Gestione profilo|
+PRECONDIZIONI | L'utente è registrato nella piattaforma.|
+POSTCONDIZIONI | La sessione è terminata.|
+SCENARIO PRINCPALE |1.L'utente si interfaccia con la gestione profilo.<br/> 2.L'utente sceglie di terminare la sessione.
+SCENARI ALTERNATIVI | A.La sessione è già scaduta e l'utente cerca di fare il logout<br/> 1.Il sistema notifica l'utente della disconnessione già avvenuta.|
+REQUISITI NON FUNZIONALI | Protezione dei dati e semplicità d'uso. Velocità di operazione per l'accesso ai dati.  |
+PUNTI APERTI | |
+
+
+
+
+| | |
+|-|-|
+TITOLO | **Modifica Info**|
+DESCRIZIONE | L'utente modifica uno o più elementi del profilo.|
+ATTORI | Utente registrato |
+RELAZIONI | Gestione profilo|
+PRECONDIZIONI | L'utente è registrato sulla piattaforma.|
+POSTCONDIZIONI | Il contenuto del profilo viene aggiornato. |
+SCENARIO PRINCPALE | 1. L'utente ha effettuato il login. <br/>2. L'utente va nella pagina di gestione profilo. <br/>3. L'utente modifica il contenuto di uno più campi (modificabili).<br/> 4. Il sistema notifica l'utente del successo dell'operazione e aggiorna il contenuto della pagina con le modifiche apportate. |
+SCENARI ALTERNATIVI |A. L'utente non è autenticato o la sessione è scaduta<br/>1. L'utente è rediretto nella schermata di login. <br/> B. L'utente vuole modificare un contenuto non modificabile<br/>1. Il sistema notifica l'utente del fallimento dell'operazione.|
+REQUISITI NON FUNZIONALI |Velocità delle operazioni di accesso ai dati. Protezione di dati e privacy e semplicità d'uso. <br/>Velocità di memorizzazione.  |
+PUNTI APERTI | |
+
+
+
+
+
+
+| | |
+|-|-|
+TITOLO | **Gestione annunci**|
+DESCRIZIONE | Gestione di tutte le operazioni che l'utente registrato può effettuare sugli annunci.|
+ATTORI | Utente registrato|
+RELAZIONI | Crea annuncio, Chiudi annuncio, Modifica annuncio, Login|
+PRECONDIZIONI | L'utente è registrato nella piattaforma|
+POSTCONDIZIONI | |
+SCENARIO PRINCPALE | 1. Login<br/>2. L'utente accede alla schermata di gestione annunci. <br/>3. L'utente può scegliere di creare un annuncio. Il sistema lo reindirizza all'apposita schermata.<br/>4. L'utente può scegliere di modificare un annuncio aperto in precedenza. Il sistema lo reindirizza all'apposita schermata.<br/>5. L'utente può scegliere di chiudere un annuncio aperto in precedenza. |
+SCENARI ALTERNATIVI | A. L'utente non è autenticato o la sessione è scaduta<br/> 1. L'utente è rediretto alla schermata di login.|
+REQUISITI NON FUNZIONALI | Velocità di ricerca dei dati e semplicità nella navigazione tra le diverse interfacce.|
+PUNTI APERTI | |
+
+
+
+
+
+
+| | |
+|-|-|
+TITOLO | **Crea annuncio**|
+DESCRIZIONE | Permette all'utente di pubblicare un annuncio sulla piattaforma.|
+ATTORI |Utente registrato |
+RELAZIONI | Gestione annunci|
+PRECONDIZIONI | L'utente è registrato nella piattaforma.|
+POSTCONDIZIONI | L'annuncio è visibile sulla piattaforma.|
+SCENARIO PRINCPALE | 1. L'utente ha effettuato il login.<br/>2. L'utente va nella schermata di creazione annunci. <br/>3. L'utente inserisce i dati dell'annuncio.<br/> 4. L'utente eventualmente aggiunge delle restrizioni sugli affittuari e/o foto dell'immobile.<br/>5. L'utente conclude l'inserimento dei dati e il sistema pubblica l'annuncio sulla piatttaforma. |
+SCENARI ALTERNATIVI | A. L'utente non è autenticato o la sessione è scaduta <br/>1. L'utente è rediretto alla schermata di login.<br/>B. L'utente non ha inserito tutti i dati obbligatori<br/>1. L'utente viene notificato dell'errore ed invitato ad inserire i dati mancanti. |
+REQUISITI NON FUNZIONALI | Protezione dei dati, velocità delle operazioni di memorizzazione, semplicità d'uso.|
+PUNTI APERTI |Proteggere l'operazione tramite test di Turing (es. CAPTCHA) al fine di impedirne l'uso improprio. |
+
+
+
+
+
+
+| | |
+|-|-|
+TITOLO | **Cerca annunci**|
+DESCRIZIONE |Permette di navigare tra gli annunci della piattaforma filtrandoli secondo vari criteri. |
+ATTORI |Utente registrato, Visitatore  |
+RELAZIONI | |
+PRECONDIZIONI | |
+POSTCONDIZIONI |Il sistema mostra tutti gli annunci compatibili con i filtri impostati.  |
+SCENARIO PRINCPALE | 1. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili. <br/>2. Se registrato, può salvare le preferenze dei filtri. <br/> 3. L'utente visualizza l'annuncio selezionato. |
+SCENARI ALTERNATIVI | A. L'utente non ha effettuato il login e cerca di visualizare i contatti del locatario di un annuncio<br/>1. Il sistema reindirizza l'utente alla schermata di login.|
+REQUISITI NON FUNZIONALI | Protezione dei dati, velocità delle operazioni di accesso ai dati, semplicità d'uso.|
+PUNTI APERTI | |
+
+
+
+| | |
+|-|-|
+TITOLO |**Chiudi annuncio** |
+DESCRIZIONE | |
+ATTORI | |
+RELAZIONI | |
+PRECONDIZIONI | |
+POSTCONDIZIONI | |
+SCENARIO PRINCPALE | |
+SCENARI ALTERNATIVI | |
+REQUISITI NON FUNZIONALI | |
+PUNTI APERTI | |
+
+
+| | |
+|-|-|
 TITOLO | |
 DESCRIZIONE | |
 ATTORI | |
 RELAZIONI | |
 PRECONDIZIONI | |
 POSTCONDIZIONI | |
-SCENARIO PRINCPALE | 
+SCENARIO PRINCPALE | |
+SCENARI ALTERNATIVI | |
+REQUISITI NON FUNZIONALI | |
+PUNTI APERTI | |
+
+
+
+
+| | |
+|-|-|
+TITOLO | |
+DESCRIZIONE | |
+ATTORI | |
+RELAZIONI | |
+PRECONDIZIONI | |
+POSTCONDIZIONI | |
+SCENARIO PRINCPALE | |
+SCENARI ALTERNATIVI | |
+REQUISITI NON FUNZIONALI | |
+PUNTI APERTI | |
+
+
+
+
+| | |
+|-|-|
+TITOLO | |
+DESCRIZIONE | |
+ATTORI | |
+RELAZIONI | |
+PRECONDIZIONI | |
+POSTCONDIZIONI | |
+SCENARIO PRINCPALE | |
+SCENARI ALTERNATIVI | |
+REQUISITI NON FUNZIONALI | |
+PUNTI APERTI | |
+
+
+
+
+| | |
+|-|-|
+TITOLO | |
+DESCRIZIONE | |
+ATTORI | |
+RELAZIONI | |
+PRECONDIZIONI | |
+POSTCONDIZIONI | |
+SCENARIO PRINCPALE | |
+SCENARI ALTERNATIVI | |
+REQUISITI NON FUNZIONALI | |
+PUNTI APERTI | |
+
+
+
+
+| | |
+|-|-|
+TITOLO | |
+DESCRIZIONE | |
+ATTORI | |
+RELAZIONI | |
+PRECONDIZIONI | |
+POSTCONDIZIONI | |
+SCENARIO PRINCPALE | |
+SCENARI ALTERNATIVI | |
+REQUISITI NON FUNZIONALI | |
+PUNTI APERTI | |
+
+
+
+
+
+| | |
+|-|-|
+TITOLO | |
+DESCRIZIONE | |
+ATTORI | |
+RELAZIONI | |
+PRECONDIZIONI | |
+POSTCONDIZIONI | |
+SCENARIO PRINCPALE | |
 SCENARI ALTERNATIVI | |
 REQUISITI NON FUNZIONALI | |
 PUNTI APERTI | |
