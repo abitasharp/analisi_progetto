@@ -7,7 +7,7 @@ RELAZIONI | |
 PRECONDIZIONI |  L'attaccante ha i mezzi per scoprire e rubare almeno la mail di utenti/admin. |
 POSTCONDIZIONI | Il sistema blocca momentaneamente l'accesso all'utente e notifica un tentativo di accesso fraudolento. |
 SCENARIO PRINCIPALE | _-ATTACCANTE_<br/>Dopo aver scoperto alcune mail, tenta di accedere con un attacco a dizionario.<br/>_-SISTEMA_<br/>Controlla le credenziali immesse e blocca l'accesso nel caso risultino errate un numero fissato di volte.|
-SCENARIO ATTACCO AVVENUTO CON SUCCESSO |_-ATTACCANTE_<br/> Attacco con dizionario riuscito. <br/>_-STSREMA_<br/>  Il sistema controlla le credenziali e consente l'accesso, tenendone traccia nei log.|
+SCENARIO ATTACCO AVVENUTO CON SUCCESSO |_-ATTACCANTE_<br/> Attacco con dizionario riuscito. <br/>_-SISTEMA_<br/>  Il sistema controlla le credenziali e consente l'accesso, tenendone traccia nei log.|
 
 
 | | |
