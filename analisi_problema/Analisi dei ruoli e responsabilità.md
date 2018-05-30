@@ -8,19 +8,83 @@
 ### RUOLO/INFORMAZIONI: VISITATORE
 |INFORMAZIONE|TIPO DI ACCESSO|
 |------------|---------------|
-| | |
+|Nome|Scrittura|
+|Congnome|Scrittura|
+|E-mail|Scrittura|
+|Password|Scrittura|
+|Telefono|Scrittura|
+|Data di nascita|Scrittura|
+|Nome azienda|Scrittura|
+|Parita IVA|Scrittura|
+|Tipologia|Lettura/Scrittura|
+|Zona|Lettura/Scrittura|
+|Prezzo massimo|Lettura/Scrittura|
+|Periodo disponibilità|Lettura/Scrittura|
+|Caratteristiche affittuario|Lettura/Scrittura|
+|Note|Lettura|
+|Foto|Lettura|
 
 ### RUOLO/INFORMAZIONI: AZIENDA
 |INFORMAZIONE|TIPO DI ACCESSO|
 |------------|---------------|
-| | |
+|Nome|Lettura|
+|Congnome|Lettura|
+|E-mail|Lettura/Scrittura|
+|Password|Scrittura|
+|Telefono|Lettura/Scrittura|
+|Data di nascita|Lettura|
+|Nome azienda|Lettura/Scrittura|
+|Parita IVA|Lettura/Scrittura|
+|Tipologia|Lettura/Scrittura|
+|Zona|Lettura/Scrittura|
+|Prezzo massimo|Lettura/Scrittura|
+|Periodo disponibilità|Lettura/Scrittura|
+|Caratteristiche affittuario|Lettura/Scrittura|
+|Note|Lettura/Scrittura|
+|Foto|Lettura/Scrittura|
+|Contatti|Lettura/Scrittura|
 
 ### RUOLO/INFORMAZIONI: PRIVATO
 |INFORMAZIONE|TIPO DI ACCESSO|
 |------------|---------------|
-| | |
+|Nome|Lettura/Scrittura|
+|Congnome|Lettura/Scrittura|
+|E-mail|Lettura/Scrittura|
+|Password|Scrittura|
+|Telefono|Lettura/Scrittura|
+|Data di nascita|Lettura/Scrittura|
+|Nome azienda|Lettura|
+|Parita IVA|Lettura/Scrittura|
+|Tipologia|Lettura/Scrittura|
+|Zona|Lettura/Scrittura|
+|Prezzo massimo|Lettura/Scrittura|
+|Periodo disponibilità|Lettura/Scrittura|
+|Caratteristiche affittuario|Lettura/Scrittura|
+|Note|Lettura/Scrittura|
+|Foto|Lettura/Scrittura|
+|Contatti|Lettura/Scrittura|
 
 ### RUOLO/INFORMAZIONI: ADMIN
 |INFORMAZIONE|TIPO DI ACCESSO|
 |------------|---------------|
-| | |
+|Nome|Lettura|
+|Congnome|Lettura|
+|E-mail|Lettura|
+|Password|Scrittura|
+|Telefono|Lettura|
+|Data di nascita|Lettura|
+|Nome azienda|Lettura|
+|Parita IVA|Lettura|
+|Tipologia|Lettura|
+|Zona|Lettura|
+|Prezzo massimo|Lettura|
+|Periodo disponibilità|Lettura|
+|Caratteristiche affittuario|Lettura|
+|Note|Lettura|
+|Foto|Lettura|
+|Contatti|Lettura|
+|ID Utente|Lettura/Scrittura|
+|ID Annuncio|Lettura/Scrittura|
+|Messaggio Avviso|Lettura/Scrittura|
+|Segnalazioni Utente|Lettura|
+|Messaggio di log|Lettura|
