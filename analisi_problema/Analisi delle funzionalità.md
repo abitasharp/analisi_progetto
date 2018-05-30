@@ -1,20 +1,20 @@
 |FUNZIONALITÀ|TIPO|GRADO COMPLESSITÀ|
 |------------|----|-----------------|
-|REGISTRAZIONE|Memorizzazione dati, interazione esterno | semplice|
-|LOGIN| |
-|CERCA PROFILO|Gestione dati, interazione esterno|media|
-|CERCA ANNUNCI|Gestione dati, interazione esterno|media|
-|GENSTIONE ANNUNCI|||
-|CREA ANNUNCIO|Memorizzazione dati, interazione esterno|semplice|
-|MODIFICA ANNUNCIO| |
-|CHIUDI ANNUNCIO|Gestione dati, interazione esterno|semplice|
-|GESTIONE PROFILO| |
-|LOGOUT|Interazione esterno|semplice|
-|MODIFICA INFO| |
-|NOTIFICA UTENTE|Gestione dati, interazione esterno|semplice|
-|AMMINISTRA PIATTAFORMA| |
-|BANNA UTENTE| |
-|ELIMINA ANNUNCIO|Gestione dati|semplice|
+|REGISTRAZIONE|Memorizzazione dati, interazione esterno | semplice
+|LOGIN|Interazione esterno,<br/>gestione dati |semplice
+|CERCA PROFILO|Interazione esterno,<br/>gestione dati |media
+|CERCA ANNUNCI|Interazione esterno,<br/>gestione dati |media
+|GENSTIONE ANNUNCI|Interazione esterno,<br/>gestione dati,<br/>memorizzazione dati|complessa
+|CREA ANNUNCIO|Interazione esterno,<br/>memorizzazione dati|semplice
+|MODIFICA ANNUNCIO|Interazione esterno,<br/>gestione dati,<br/>memorizzazione dati|media
+|CHIUDI ANNUNCIO|Interazione esterno,<br/>gestione dati|semplice
+|GESTIONE PROFILO|Interazione esterno,<br/>gestione dati,<br/>memorizzazione dati|complessa
+|LOGOUT|Interazione esterno|semplice
+|MODIFICA INFO|Interazione esterno,<br/>gestione dati,<br/>memorizzazione dati|media
+|NOTIFICA UTENTE|Interazione esterno,<br/>gestione dati|semplice
+|AMMINISTRA PIATTAFORMA|Gestione dati,<br/>memorizzazione dati|complessa
+|BANNA UTENTE|Gestione dati,<br/>memorizzazione dati|semplice
+|ELIMINA ANNUNCIO|Gestione dati|semplice
 
 ### INFORMAZIONI/FLUSSO: REGISTRAZIONE
 |INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
