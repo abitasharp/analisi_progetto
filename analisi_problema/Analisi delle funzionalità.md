@@ -1,20 +1,20 @@
 |FUNZIONALITÀ|TIPO|GRADO COMPLESSITÀ|
 |------------|----|-----------------|
-|REGISTRAZIONE| |
-|LOGIN|Interazione esterno,<br/>gestione dati |semplice
-|CERCA PROFILO| |
-|CERCA ANNUNCI| |
-|GENSTIONE ANNUNCI|Interazione esterno,<br/>memorizzazione dati,<br/>gestione dati |complessa
-|CREA ANNUNCIO| |
-|MODIFICA ANNUNCIO|Interazione esterno,<br/> memorizzazione dati,<br/>gestione dati |media
-|CHIUDI ANNUNCIO| |
-|GESTIONE PROFILO|Interazione esterno,<br/>memorizzazione dati,<br/>gestione dati |complessa
-|LOGOUT| |
-|MODIFICA INFO|Interazione esterno,<br/> memorizzazione dati,<br/>gestione dati |media |
-|NOTIFICA UTENTE| |
-|AMMINISTRA PIATTAFORMA|Interazione esterno,<br/>memorizzazione dati,<br/>gestione dati |complessa
-|BANNA UTENTE|Memorizzazione dati,<br/>gestione dati |semplice
-|ELIMINA ANNUNCIO| |
+|REGISTRAZIONE|Memorizzazione dati, interazione esterno | semplice|
+|LOGIN| |
+|CERCA PROFILO|Gestione dati, interazione esterno|media|
+|CERCA ANNUNCI|Gestione dati, interazione esterno|media|
+|GENSTIONE ANNUNCI|||
+|CREA ANNUNCIO|Memorizzazione dati, interazione esterno|semplice|
+|MODIFICA ANNUNCIO| |
+|CHIUDI ANNUNCIO|Gestione dati, interazione esterno|semplice|
+|GESTIONE PROFILO| |
+|LOGOUT|Interazione esterno|semplice|
+|MODIFICA INFO| |
+|NOTIFICA UTENTE|Gestione dati, interazione esterno|semplice|
+|AMMINISTRA PIATTAFORMA| |
+|BANNA UTENTE| |
+|ELIMINA ANNUNCIO|Gestione dati|semplice|
 
 ### INFORMAZIONI/FLUSSO: REGISTRAZIONE
 |INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
