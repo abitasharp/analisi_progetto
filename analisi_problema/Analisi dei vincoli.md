@@ -1,0 +1,3 @@
+|REQUISITO|CATEGORIE|IMPATTO|FUNZIONALITÀ|
+|---------|---------|-------|------------|
+| | | | |
