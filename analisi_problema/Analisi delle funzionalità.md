@@ -1,19 +1,19 @@
 |FUNZIONALITÀ|TIPO|GRADO COMPLESSITÀ|
 |------------|----|-----------------|
 |REGISTRAZIONE| |
-|LOGIN| |
+|LOGIN|Interazione esterno,<br/>gestione dati |semplice
 |CERCA PROFILO| |
 |CERCA ANNUNCI| |
-|GENSTIONE ANNUNCI| |
+|GENSTIONE ANNUNCI|Interazione esterno,<br/>memorizzazione dati,<br/>gestione dati |complessa
 |CREA ANNUNCIO| |
-|MODIFICA ANNUNCIO| |
+|MODIFICA ANNUNCIO|Interazione esterno,<br/> memorizzazione dati,<br/>gestione dati |media
 |CHIUDI ANNUNCIO| |
-|GESTIONE PROFILO| |
+|GESTIONE PROFILO|Interazione esterno,<br/>memorizzazione dati,<br/>gestione dati |complessa
 |LOGOUT| |
-|MODIFICA INFO| |
+|MODIFICA INFO|Interazione esterno,<br/> memorizzazione dati,<br/>gestione dati |media |
 |NOTIFICA UTENTE| |
-|AMMINISTRA PIATTAFORMA| |
-|BANNA UTENTE| |
+|AMMINISTRA PIATTAFORMA|Interazione esterno,<br/>memorizzazione dati,<br/>gestione dati |complessa
+|BANNA UTENTE|Memorizzazione dati,<br/>gestione dati |semplice
 |ELIMINA ANNUNCIO| |
 
 ### INFORMAZIONI/FLUSSO: REGISTRAZIONE
