@@ -185,3 +185,22 @@
 |ID Annuncio |semplice |Protezione media |Output | |
 |Messaggio di avviso |semplice |Protezione media |Input |Non più di 1000 caratteri|
 
+
+
+### INFORMAZIONI/FLUSSO: SCRITTURA LOG
+|INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
+|------------|----|-----------------------|------------|-------|
+|Data|semplice |Protezione media |Input |Non più di 40 caratteri |
+|Ora|semplice |Protezione media |Input |Non più di 40 caratteri |
+|Operazione<br/>eseguita |composto |Protezione alta |Input | |
+|Messaggio |composto |Protezione molto alta |Input | |
+
+
+
+
+### INFORMAZIONI/FLUSSO: ANALISI LOG
+|INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
+|------------|----|-----------------------|------------|-------|
+|Segnalazione |composto |Protezione bassa |Output | |
+ 
+
