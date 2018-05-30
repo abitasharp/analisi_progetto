@@ -200,7 +200,7 @@ PRECONDIZIONI | L'Admin è registrato sulla piattaforma.  |
 POSTCONDIZIONI | |
 SCENARIO PRINCPALE |1. Login.<br/> 2. L'Admin accede alla schermata di gestione della piattaforma. <br/>3. L'Admin può visualizzare la lista degli utenti registrati e degli annunci pubblicati. <br/> 4. L'Admin può scegliere di eliminare una o più voci dalle suddette liste. Il sistema lo reindirizza alla schermata corrispondente di ban utente o eliminazione annunci.|
 SCENARI ALTERNATIVI |A. L'Admin non è autenticato o la sessione è scaduta <br/>A.1. L'Admin è rediretto alla schermata di login. |
-REQUISITI NON FUNZIONALI |Protezione dei dati e della privacy, velocità delle operazioni. |
+REQUISITI NON FUNZIONALI |Protezione dei dati e della privacy, velocità delle operazioni di accesso ai dati. |
 PUNTI APERTI | |
 
 
@@ -216,7 +216,7 @@ PRECONDIZIONI | L'Admin è registrato sulla piattaforma. |
 POSTCONDIZIONI |L'utente non può più effettuare il login e i suoi dati vengono salvati in una lista di utenti bannati.|
 SCENARIO PRINCPALE | 1. Login.<br/>2. L'admin si interfaccia con la schermata di amministrazione piattaforma.<br/>3. L'admin sceglie di bannare un utente. <br/>4. L'admin seleziona l'utente da bannare dalla lista di utenti registrati.|
 SCENARI ALTERNATIVI | A. L'admin non ha effettuato il login o la sessione è scaduta. <br/>A.1. L'admin viene reindirizzato alla schermata di login.  |
-REQUISITI NON FUNZIONALI | Protezione dei dati e della privacy, velocità delle operazioni. |
+REQUISITI NON FUNZIONALI | Protezione dei dati e della privacy, velocità delle operazioni di accesso ai dati. |
 PUNTI APERTI | |
 
 
@@ -233,5 +233,5 @@ PRECONDIZIONI | L'Admin è registrato sulla piattaforma.|
 POSTCONDIZIONI |L'annuncio non è più visibile sulla piattaforma. |
 SCENARIO PRINCPALE |1. Login. <br/> 2. L'admin si interfaccia con la schermata di amministrazione piattaforma. <br/>3. L'admin sceglie di eliminare un annuncio.<br/>4. L'admin seleziona l'annuncio da eliminare dalla lista di annunci pubblicati.|
 SCENARI ALTERNATIVI |A. L'admin non ha effettuato il login o la sessione è scaduta.<br/>A.1. L'admin viene reindirizzato alla schermata di login. |
-REQUISITI NON FUNZIONALI |  Protezione dei dati e della privacy, velocità delle operazioni. |
+REQUISITI NON FUNZIONALI |  Protezione dei dati e della privacy, velocità delle operazioni di accesso ai dati. |
 PUNTI APERTI | |
