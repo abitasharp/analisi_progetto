@@ -67,22 +67,22 @@
 ### RUOLO/INFORMAZIONI: ADMIN
 |INFORMAZIONE|TIPO DI ACCESSO|
 |------------|---------------|
-|Nome|Lettura|
-|Congnome|Lettura|
-|E-mail|Lettura|
+|Nome|Lettura/Scrittura|
+|Congnome|Lettura/Scrittura|
+|E-mail|Lettura/Scrittura|
 |Password|Scrittura|
-|Telefono|Lettura|
-|Data di nascita|Lettura|
-|Nome azienda|Lettura|
-|Parita IVA|Lettura|
-|Tipologia|Lettura|
-|Zona|Lettura|
-|Prezzo massimo|Lettura|
-|Periodo disponibilità|Lettura|
-|Caratteristiche affittuario|Lettura|
-|Note|Lettura|
-|Foto|Lettura|
-|Contatti|Lettura|
+|Telefono|Lettura/Scrittura|
+|Data di nascita|Lettura/Scrittura|
+|Nome azienda|Lettura/Scrittura|
+|Parita IVA|Lettura/Scrittura|
+|Tipologia|Lettura/Scrittura|
+|Zona|Lettura/Scrittura|
+|Prezzo massimo|Lettura/Scrittura|
+|Periodo disponibilità|Lettura/Scrittura|
+|Caratteristiche affittuario|Lettura/Scrittura|
+|Note|Lettura/Scrittura|
+|Foto|Lettura/Scrittura|
+|Contatti|Lettura/Scrittura|
 |ID Utente|Lettura/Scrittura|
 |ID Annuncio|Lettura/Scrittura|
 |Messaggio Avviso|Lettura/Scrittura|
