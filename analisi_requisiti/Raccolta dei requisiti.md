@@ -24,7 +24,7 @@ locatari.
 prezzo, periodo, note (facoltativo). Successivamente può specificare i requisiti  dell'affittuario/i  (genere, fumatore, erasmus, 
 animali, studente, lavoratore, famiglia). Inoltre può allegare delle foto.
 
-- L'affittuario al momento della ricerca può specificare la tipologia, la zona, il prezzo massimo e il periodo di disponibilità degli immobili da visualizzare.
+- L'utente al momento della ricerca può specificare le caratteristiche dell'immobile: tipologia, zona, prezzo massimo e periodo di disponibilità e i requisiti degli affittuari imposti dal locatario (genere, fumatore, erasmus, animali domestici, studente, lavoratore, famiglia).
 
 - Gli annunci rimangono attivi sulla piattaforma per una durata massima scelta dal locatario fra varie opzioni. E' responsabilità 
 dello stesso chiuderli una volta trovato l'affituario/i.
