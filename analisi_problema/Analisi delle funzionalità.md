@@ -50,7 +50,7 @@
 |------------|----|-----------------------|------------|-------|
 |Tipologia |composto |Protezione media |Input | |
 |Zona |composto |Protezione media |Input | |
-|Prezzo massimo |semplice |Protezione media |Input |Non più di 20 caratteri |
+|Prezzo massimo |composto |Protezione media |Input |Non più di 20 caratteri |
 |Periodo disponibilità |composto |Protezione media |Input | |
 |Caratteristiche affittuario |composto |Protezione media |Input | |
 
@@ -60,7 +60,7 @@
 |------------|----|-----------------------|------------|-------|
 |Tipologia |composto |Protezione media |Input/Output | |
 |Indirizzo |composto |Protezione media |Input/Output |Non più di 200 caratteri |
-|Prezzo |semplice |Protezione media |Input/Output |Non più di 20 caratteri |
+|Prezzo |composto |Protezione media |Input/Output |Non più di 20 caratteri |
 |Periodo disponibilità |composto |Protezione media |Input/Output | |
 |Caratteristiche affittuario |composto |Protezione media |Input/Output | |
 |Note |semplice |Protazione media |Input/Output |Non più di 2000 caratteri |
@@ -73,7 +73,7 @@
 |------------|----|-----------------------|------------|-------|
 |Tipologia |composto |Protezione media |Input | |
 |Indirizzo |composto |Protezione media |Input |Non più di 200 caratteri |
-|Prezzo |semplice |Protezione media |Input |Non più di 20 caratteri |
+|Prezzo |composto |Protezione media |Input |Non più di 20 caratteri |
 |Periodo disponibilità |composto |Protezione media |Input | |
 |Caratteristiche affittuario |composto |Protezione media |Input | |
 |Note |semplice |Protazione media |Input |Non più di 2000 caratteri |
@@ -85,7 +85,7 @@
 |------------|----|-----------------------|------------|-------|
 |Tipologia |composto |Protezione media |Input/Output | |
 |Indirizzo |composto |Protezione media |Output | |
-|Prezzo |semplice |Protezione media |Input/Output |Non più di 20 caratteri |
+|Prezzo |composto |Protezione media |Input/Output |Non più di 20 caratteri |
 |Periodo disponibilità |composto |Protezione media |Input/Output | |
 |Caratteristiche affittuario |composto |Protezione media |Input/Output | |
 |Note |semplice |Protazione media |Input/Output |Non più di 2000 caratteri |
@@ -98,7 +98,7 @@
 |------------|----|-----------------------|------------|-------|
 |Tipologia |composto |Protezione media |Output | |
 |Indirizzo |composto |Protezione media |Output | |
-|Prezzo |semplice |Protezione media |Output | |
+|Prezzo |composto |Protezione media |Output | |
 |Periodo disponibilità |composto |Protezione media |Output | |
 |Caratteristiche affittuario |composto |Protezione media |Output | |
 |Note |semplice |Protazione media |Output | |
@@ -155,7 +155,7 @@
 |ID Annuncio |semplice |Protezione media |Input |Non più di 40 caratteri |
 |Tipologia |composto |Protezione media |Output | |
 |Indirizzo |composto |Protezione media |Output | |
-|Prezzo massimo |semplice |Protezione media |Output | |
+|Prezzo |composto |Protezione media |Output | |
 |Periodo disponibilità |composto |Protezione media |Output | |
 |Caratteristiche affittuario |composto |Protezione media |Output | |
 |Note |semplice |Protazione media |Output | | 
