@@ -43,6 +43,7 @@ dello stesso chiuderli una volta trovato l'affituario/i.
 VOCE | DEFINIZIONE | SINONIMI
 -----|-------------|---------
 UTENTE | Persona che utilizza la piattaforma. Può essere registrato o meno. | LOCATARIO, AFFITTUARIO, PRIVATO, AZIENDA
+ADMIN |Utente che gestisce la piattaforma, riceve le segnalazioni, banna gli utenti, elimina gli annunci.|
 PROFILO | Insieme di dati e preferenze personalizzabili relativi all'utente | ACCOUNT
 VISITATORE | Utente non registrato. | |
 PRIVATO | Utente registrato come privato. Può contattare i locatari degli annunci. | |
