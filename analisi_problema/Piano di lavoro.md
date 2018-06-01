@@ -1,6 +1,17 @@
 |PACKAGE|PROGETTO|SVILUPPO|
 |-------|--------|--------|
-| | | |
+|Dominio |Team progettazione + Team DB |Team sviluppo + Team DB |
+|Registrazione |Team progettazione + Team sicurezza|Team sviluppo + Team sicurezza
+|Interfaccia Registrazione | Team progettazione| Team sviluppo + Team grafico|
+|Login |Team progettazione + Team sicurezza|Team sviluppo + Team sicurezza|
+|Interfaccia Login |Team progettazione|Team sviluppo + Team grafico|
+|Gestione Annunci |Team progettazione|Team sviluppo|
+|Gestione Profilo |Team progettazione|Team sviluppo|
+|Amministra Piattaforma|Team progettazione|Team sviluppo|
+|Interfaccia Utente|Team progettazione|Team sviluppo + Team grafico|
+|Interfaccia Visitatore |Team progettazione|Team sviluppo + Team grafico|
+|Interfaccia Admin |Team progettazione|Team sviluppo + Team grafico|
+|Log|Team progettazione + Team sicurezza|Team sviluppo|
 
 I tempi di rilascio previsti sono i seguenti:
 - Progettazione entro il primo Giugno 2018
