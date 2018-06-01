@@ -15,6 +15,7 @@
 |AMMINISTRA PIATTAFORMA|Gestione dati,<br/>memorizzazione dati|complessa
 |BANNA UTENTE|Gestione dati,<br/>memorizzazione dati|semplice
 |ELIMINA ANNUNCIO|Gestione dati|semplice
+|SCRITTURA LOG|Memorizzazione dati|semplice
 
 ### INFORMAZIONI/FLUSSO: REGISTRAZIONE
 |INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
