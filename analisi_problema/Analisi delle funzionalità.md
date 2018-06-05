@@ -16,7 +16,6 @@
 |AMMINISTRA PIATTAFORMA|Gestione dati,<br/>memorizzazione dati|complessa
 |BANNA UTENTE|Gestione dati,<br/>memorizzazione dati|semplice
 |ELIMINA ANNUNCIO|Gestione dati|semplice
-|SCRITTURA LOG|Memorizzazione dati|semplice
 
 ### INFORMAZIONI/FLUSSO: REGISTRAZIONE
 |INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
@@ -136,7 +135,7 @@
 |E-mail |semplice |Protezione molto alta |Output | |
 |Nome azienda |semplice |Protezione media |Output | |
 |Partita iva |semplice |Protezione media |Output | |
-
+|Password |semplice |Protezione alta |Input |Non più di 50 caratteri  |
 
 
 ### INFORMAZIONI/FLUSSO: MODIFICA INFO
@@ -197,23 +196,3 @@
 |------------|----|-----------------------|------------|-------|
 |ID Annuncio |semplice |Protezione media |Output | |
 |Messaggio di avviso |semplice |Protezione media |Input |Non più di 1000 caratteri|
-
-
-
-### INFORMAZIONI/FLUSSO: SCRITTURA LOG
-|INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
-|------------|----|-----------------------|------------|-------|
-|Data|semplice |Protezione media |Input |Non più di 40 caratteri |
-|Ora|semplice |Protezione media |Input |Non più di 40 caratteri |
-|Operazione<br/>eseguita |composto |Protezione alta |Input | |
-|Messaggio |composto |Protezione molto alta |Input | |
-
-
-
-
-### INFORMAZIONI/FLUSSO: ANALISI LOG
-|INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
-|------------|----|-----------------------|------------|-------|
-|Segnalazione |composto |Protezione bassa |Output | |
- 
-
