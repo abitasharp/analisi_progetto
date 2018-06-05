@@ -1,7 +1,7 @@
 |FUNZIONALITÀ|SCOMPOSIZIONE|
 |------------|-------------|
 |GESTIONE ANNUNCI|Crea Annuncio, Modifica Annuncio, Chiudi Annuncio|
-|GESTIONE PROFILO|Modifica Info, Logout|
+|GESTIONE PROFILO|Modifica Info, Logout, Elimina Profilo|
 |AMMINISTRA PIATTAFORMA|Banna Utente, Elimina Annuncio|
 
 ### Gestione Annunci
