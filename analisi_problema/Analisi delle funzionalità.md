@@ -11,6 +11,7 @@
 |GESTIONE PROFILO|Interazione esterno,<br/>gestione dati,<br/>memorizzazione dati|complessa
 |LOGOUT|Interazione esterno|semplice
 |MODIFICA INFO|Interazione esterno,<br/>gestione dati,<br/>memorizzazione dati|media
+|CANCELLA PROFILO|Interazione esterno,<br/>gestione dati,<br/>memorizzazione dati|semplice
 |NOTIFICA UTENTE|Interazione esterno,<br/>gestione dati|semplice
 |AMMINISTRA PIATTAFORMA|Gestione dati,<br/>memorizzazione dati|complessa
 |BANNA UTENTE|Gestione dati,<br/>memorizzazione dati|semplice
