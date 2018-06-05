@@ -127,6 +127,17 @@
 
 
 
+### INFORMAZIONI/FLUSSO: CANCELLA PROFILO
+|INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
+|------------|----|-----------------------|------------|-------|
+|Nome |semplice |Protezione media |Output | |
+|Cognome |semplice |Protezione media |Output | |
+|E-mail |semplice |Protezione molto alta |Output | |
+|Nome azienda |semplice |Protezione media |Output | |
+|Partita iva |semplice |Protezione media |Output | |
+
+
+
 ### INFORMAZIONI/FLUSSO: MODIFICA INFO
 |INFORMAZIONE|TIPO|LIVELLO DI RISERVATEZZA|INPUT/OUTPUT|VINCOLI|
 |------------|----|-----------------------|------------|-------|
