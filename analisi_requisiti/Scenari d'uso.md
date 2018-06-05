@@ -131,7 +131,7 @@ PUNTI APERTI | |
 | | |
 |-|-|
 TITOLO |**Chiudi annuncio** |
-DESCRIZIONE | L'utente chiude l'annuncio rendendolo non più visibile nella piattaforma e disabilitando ulteriori modifiche. L'inserzione sarà comunque visibile nella cronologia annunci.|
+DESCRIZIONE | L'utente chiude l'annuncio rendendolo non più visibile nella piattaforma e disabilitando ulteriori modifiche.|
 ATTORI | Utente registrato|
 RELAZIONI | Gestione annunci |
 PRECONDIZIONI | L'utente è registrato nella piattaforma ed ha pubblicato almeno un annuncio.|
