@@ -15,6 +15,7 @@
 |View Banna Utente|ID utente, Messaggio di avviso|Banna utente|
 |View Elimina Annuncio|ID annuncio, Messaggio di avviso|Elimina annuncio|
 |View Log|Data, Ora, Oerazione eseguita, Messaggio|Analisi Log|
+|View Segnalazioni|Annuncio segnalato, Utente segnalatore, Messaggio, Timestamp|Amministrazione Piattaforma|
 
 
 
