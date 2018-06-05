@@ -178,11 +178,11 @@ PUNTI APERTI | |
 |-|-|
 TITOLO | **Notifica utente** |
 DESCRIZIONE | Notifica l'utente privato alla pubblicazione di un annuncio comatibile con filtri di ricerca salvati. |
-ATTORI |Privato, Nuovo annuncio compatibile  |
+ATTORI | Nuovo annuncio compatibile  |
 RELAZIONI | |
 PRECONDIZIONI |L'utente è registrato come privato. <br/>L'utente ha salvato dei filtri di ricerca ed ha abilitato le notifiche.  |
 POSTCONDIZIONI |L'utente riceve una email contenente un link dell'annuncio.  |
-SCENARIO PRINCPALE | 1. Si verifica l'evento 'Nuovo annuncio compatibile'.<br/>2. Il sistema seleziona tutti gli account compatibili con l'annuncio in base ai filtri salvati <br/>3. Il sistema comunica tramite email dati e link dell'annuncio ad ognuno degli utenti selezionati.|
+SCENARIO PRINCPALE | 1. Si verifica l'evento 'Nuovo annuncio compatibile'.<br/>2. Il sistema seleziona tutti gli account privati  compatibili con l'annuncio in base ai filtri salvati <br/>3. Il sistema comunica tramite email dati e link dell'annuncio ad ognuno degli utenti selezionati.|
 SCENARI ALTERNATIVI | |
 REQUISITI NON FUNZIONALI |Protezione dei dati e della privacy. |
 PUNTI APERTI | |
