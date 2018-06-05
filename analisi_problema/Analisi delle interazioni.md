@@ -10,7 +10,7 @@
 |View Crea Annuncio|Tipologia, Indirizzo, Prezzo massimo, Periodo disponibilità, Caratteristiche affittuario, Note, Foto|Crea Annuncio|
 |View Modifica Annuncio|Tipologia, Indirizzo, Prezzo massimo, Periodo disponibilità, Caratteristiche affittuario, Note, Foto|Modifica Annuncio|
 |View Chiudi Annuncio|Tipologia, Indirizzo, Prezzo massimo, Periodo disponibilità, Caratteristiche affittuario, Note, Foto|Chiudi Annuncio|
-|View Modifica Info|Nome, Cognome, E-mail, Password, Telefono, Data di nascita, Nome azienda, Partita IVA, Contatti|Modifica Info|
+|View Modifica Info|Nome, Cognome, E-mail, Password, Telefono, Data di nascita, Nome azienda, Partita IVA, Contatti|Modifica Info, Cancella Profilo|
 |Home Amministrazione|Scelta delle operazioni eseguibili, lista degli utenti e degli annunci sulla piattaforma, visualizzazione log e anomalie|Amministra piattaforma|
 |View Banna Utente|ID utente, Messaggio di avviso|Banna utente|
 |View Elimina Annuncio|ID annuncio, Messaggio di avviso|Elimina annuncio|
