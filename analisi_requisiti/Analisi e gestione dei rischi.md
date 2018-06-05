@@ -15,7 +15,7 @@ Furto credenziali utente | Alta | Log di tutte le operazioni | Basso costo imple
 Furto credenziali amministratore | Alta | Password sicure obbligatorie, distribuite a personale ristretto. Log di tutte le operazioni | Basso costo implementativo
 Intercettazione comunicazioni | Alta. Il sistema è distribuito client/server e avvengono molte interazioni fra i diversi nodi. | Cifratura delle comunicazioni | Il costo dipende dal tipo di cifratura scelta. Basso se è simmetrica, alto se simmetrica poichè richiede che un ente certificato rilasci una coppia di chiavi.
 DoS | Bassa| Progettazione adeguata, controllo e limitazione degli accessi. | Basso costo. Impossibile prevedere un DoS.
-Annunci malevoli | Alta | Il sistema deve controllare l'input utente | Basso costo, implementazione semplice.
+Annunci malevoli | Alta | Il sistema deve controllare l'input utente, oltre a garantire la paternità inequivocabile dei contenuti pubblicati. | Basso costo, implementazione semplice.
 
 **ANALISI TECNOLOGICA DELLA SICUREZZA**
 
@@ -31,9 +31,9 @@ Sito web | - Cross-site scripting
 
 Dall’analisi del rischio si possono evincere i seguenti ulteriori requisiti:
 
-1. Creazione di un log per tracciare:
-  a. tutte le azioni che avvengono sul sistema
-  b. i messaggi scambiati tra le parti del sistema .
+1. I dati memorizzati e scambiati nel sistema devono essere protetti.
 2. Individuare una corretta politica di controllo degli accessi.
-3. I dati memorizzati e scambiati nel sistema devono essere protetti.
-4. Deve essere possibile risalire alla paternità dei contenuti pubblicati nel sistema.
+3. Deve essere possibile risalire alla paternità dei contenuti pubblicati nel sistema.
+4. Creazione di log per tracciare:
+  a. tutte le azioni che avvengono sul sistema
+  b. i messaggi scambiati tra le parti del sistema
