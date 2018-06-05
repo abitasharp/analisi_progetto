@@ -121,8 +121,8 @@ ATTORI |Utente registrato, Visitatore  |
 RELAZIONI | |
 PRECONDIZIONI | |
 POSTCONDIZIONI |Il sistema mostra tutti gli annunci compatibili con i filtri impostati.  |
-SCENARIO PRINCIPALE | 1. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili. <br/>2. Se registrato, può salvare le preferenze dei filtri. <br/> 3. L'utente visualizza l'annuncio selezionato. |
-SCENARI ALTERNATIVI | A. L'utente non ha effettuato il login e cerca di visualizare i contatti del locatario di un annuncio<br/>A.1. Il sistema reindirizza l'utente alla schermata di login.|
+SCENARIO PRINCIPALE | 1. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili. <br/>2. Se registrato, può salvare le preferenze dei filtri. <br/> 3. L'utente visualizza l'annuncio selezionato. <br/> 4. L'utente, se registrato, può segnalare o aggiungere ai preferiti l'annuncio visualizzato. |
+SCENARI ALTERNATIVI | A. L'utente non ha effettuato il login e cerca di visualizare i contatti del locatario di un annuncio<br/>A.1. Il sistema reindirizza l'utente alla schermata di login.<br/> B. L'utente non ha effettuato il login e cerca di segnalare o aggiungere ai preferiti un annuncio<br/> B.1. Il sistema reindirizza l'utente alla schermata di login.|
 REQUISITI NON FUNZIONALI | Protezione dei dati, velocità delle operazioni di accesso ai dati, semplicità d'uso.|
 PUNTI APERTI | |
 
