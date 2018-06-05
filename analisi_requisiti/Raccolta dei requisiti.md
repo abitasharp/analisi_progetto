@@ -13,9 +13,9 @@ iva).
 - L'utente registrato sulla piattaforma ha a disposizione un'area dedicata alla gestione del proprio profilo personale, dalla
 quale può modificare le informazioni generali e di contatto (nome, email, numero telefonico), modificare le proprie caratteristiche secondarie da applicare alla ricerca di immobili, abilitare o disabilitare la ricezione di notifiche ed eventualmente chiudere il proprio account.
 
-- Il privato ha la possibilità di visulizzare negli annunci i recapiti del locatario e di ricevere notifiche (tramite email) che 
+- Il privato ha la possibilità di visualizzare negli annunci i recapiti del locatario e di ricevere notifiche (tramite email) che 
 lo informino riguardo nuove inserzioni corrispondenti alle sue esigenze. Esso ha inoltre la possibilità di seguire gli annunci
-aggiungendoli ad una lista di preferiti.
+aggiungendoli ad una lista di preferiti, o di segnalarli nel caso risultino fittizi.
 
 - Il visitatore può visualizzare tutti gli annunci pubblicati sulla piattaforma senza tuttavia poter accedere ai recapiti dei 
 locatari.
