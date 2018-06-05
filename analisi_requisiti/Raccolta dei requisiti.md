@@ -29,14 +29,12 @@ animali, studente, lavoratore, famiglia). Inoltre può allegare delle foto.
 - Gli annunci rimangono attivi sulla piattaforma per una durata massima scelta dal locatario fra varie opzioni. E' responsabilità 
 dello stesso chiuderli una volta trovato l'affituario/i.
 
-- Gli utenti possono cercare tra i profili utente ed eventualmente visualizzare tutti gli annunci aperti pubblicati da un determinato utente.
+- Gli utenti possono cercare tra i profili registrati ed eventualmente visualizzarne i recapiti e tutti gli annunci aperti.
 
 - L'utente ha la possibilità di segnalare un annuncio, tali segnalazioni vengono ricevute e gestite dagli amministratori tramite l'apposita dashboard.
 
 - L'amministratore può procedere eliminando l'annuncio o addirittura bannando l'utente che lo ha pubblicato.
  
-- La valuta di riferimento è l'euro.
-
 - L'utente può in qualunque momento eliminare il proprio profilo, eliminando di fatto ogni informazione a lui relativa dal sistema.
 
 
@@ -45,20 +43,18 @@ dello stesso chiuderli una volta trovato l'affituario/i.
 VOCE | DEFINIZIONE | SINONIMI
 -----|-------------|---------
 UTENTE | Persona che utilizza la piattaforma. Può essere registrato o meno. | LOCATARIO, AFFITTUARIO, PRIVATO, AZIENDA
-ADMIN |Utente che gestisce la piattaforma, riceve le segnalazioni, banna gli utenti, elimina gli annunci.|
-PROFILO | Insieme di dati e preferenze personalizzabili relativi all'utente | ACCOUNT
 VISITATORE | Utente non registrato. | |
+ADMIN |Utente che gestisce la piattaforma, riceve le segnalazioni, banna gli utenti, elimina gli annunci.|
 PRIVATO | Utente registrato come privato. Può contattare i locatari degli annunci. | |
 AZIENDA | Utente registrato come azienda. | ATTIVITA'
-LOCATARIO | Utente registrato che pubblica un annuncio. | |
-AFFITTUARIO | Utente che cerca tra gli annunci. | |
+PROFILO | Insieme di dati e preferenze personalizzabili relativi all'utente | ACCOUNT
 ANNUNCIO | Pubblcazione di un'offerta immobiliare. | INSERZIONE
 CARATTERISTICHE | Attributi di un utente privato. | ESIGENZE 
-REQUISITI | Insieme di attributi di un annuncio che gestiscono la compatibilità con gli utenti. | |                   
+REQUISITI | Insieme di attributi di un annuncio che gestiscono la compatibilità con gli utenti. | |  
+LOCATARIO | Utente registrato che pubblica un annuncio. | |
+AFFITTUARIO | Utente che cerca tra gli annunci. | |              
 RECAPITI | Informazioni di contatto. | |
 PREFERITI | Annunci salvati dall'utente. | |
-VALUTA DI RIFERIMENTO | Tipo di moneta usata nella piattaforma. | |
-EURO | Valuta adottata nella Comunità Europea e valuta di riferimento. | |
 PASSWORD | Codice alfanumerico di almeno 8 caratteri. | |
 TIPOLOGIA ANNUNCIO | Categoria immobile (posto letto, stanza, appartamento). | |
 DASHBOARD | Interfaccia che permette all'amministratore di gestire la piattaforma. | PANNELLO DI CONTROLLO |
