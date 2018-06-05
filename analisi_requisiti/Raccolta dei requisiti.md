@@ -37,6 +37,8 @@ dello stesso chiuderli una volta trovato l'affituario/i.
  
 - La valuta di riferimento è l'euro.
 
+- L'utente può in qualunque momento eliminare il proprio profilo, eliminando di fatto ogni informazione a lui relativa dal sistema.
+
 
 <b>VOCABOLARIO</b>
 
