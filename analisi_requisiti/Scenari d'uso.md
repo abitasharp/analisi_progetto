@@ -2,7 +2,7 @@
 |-|-|
 TITOLO | **Login** |
 DESCRIZIONE | Permette di autenticarsi come utente registrato. |
-ATTORI | Visitatore, Utente registrato |
+ATTORI | Visitatore, Utente registrato, Admin |
 RELAZIONI | Registrazione, Gestione annunci |
 PRECONDIZIONI | |
 POSTCONDIZIONI | |
@@ -29,15 +29,31 @@ PUNTI APERTI |Proteggere la registrazione tramite test di Turing (es. CAPTCHA) a
 
 | | |
 |-|-|
+TITOLO | **Cerca annunci**|
+DESCRIZIONE |Permette di navigare tra gli annunci della piattaforma filtrandoli secondo vari criteri. |
+ATTORI |Utente registrato, Visitatore  |
+RELAZIONI | |
+PRECONDIZIONI | |
+POSTCONDIZIONI |Il sistema mostra tutti gli annunci compatibili con i filtri impostati.  |
+SCENARIO PRINCIPALE | 1. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili. <br/>2. Se registrato, può salvare le preferenze dei filtri. <br/> 3. L'utente visualizza l'annuncio selezionato. <br/> 4. L'utente, se registrato, può segnalare o aggiungere ai preferiti l'annuncio visualizzato. |
+SCENARI ALTERNATIVI | A. L'utente non ha effettuato il login e cerca di visualizare i contatti del locatario di un annuncio<br/>A.1. Il sistema reindirizza l'utente alla schermata di login.<br/> B. L'utente non ha effettuato il login e cerca di segnalare o aggiungere ai preferiti un annuncio<br/> B.1. Il sistema reindirizza l'utente alla schermata di login.|
+REQUISITI NON FUNZIONALI | Protezione dei dati, velocità delle operazioni di accesso ai dati, semplicità d'uso.|
+PUNTI APERTI | |
+
+
+
+
+| | |
+|-|-|
 TITOLO | **Gestione profilo**|
-DESCRIZIONE | Permettere all'utente di interfacciarsi con i dati e preferenze inseriti nella registrazione|
+DESCRIZIONE | Permettere all'utente di interfacciarsi con i dati e preferenze inseriti nella registrazione, eventualmente terminare la sessione o cancellare il profilo.|
 ATTORI | Utente registrato|
-RELAZIONI |Modifica profilo, Login, Logout |
+RELAZIONI |Modifica profilo, Login, Logout, Elimina Profilo |
 PRECONDIZIONI |L'utente è registrato nella piattaforma. |
 POSTCONDIZIONI | |
-SCENARIO PRINCIPALE | 1. Login <br/> 2.L'utente accede alla schermata di gestione profilo. <br/>3.L'utente può visualizzare i dati e le preferenze inserite nella registrazione. <br/>4.L'utente può scegliere di modificare uno o più elementi del profilo. Il sistema lo reindirizza alla schermata aggiornata di gestione profilo.
+SCENARIO PRINCIPALE | 1. Login <br/> 2. L'utente accede alla schermata di gestione profilo. <br/>3. L'utente può visualizzare i dati e le preferenze inserite nella registrazione. <br/>4. L'utente può scegliere di modificare uno o più elementi del profilo. Il sistema lo reindirizza alla schermata aggiornata di gestione profilo.<br/>5. L'utente può terminare la sessione facendo il logout.<br/> 6. Può eliminare il proprio account tramite l'apposita voce.|
 SCENARI ALTERNATIVI | A. L'utente non è autenticato o la sessione è scaduta <br/> A.1. L'utente è rediretto alla schermata di login. |
-REQUISITI NON FUNZIONALI | Protezione dei dati e privacy, semplicità d'uso. |
+REQUISITI NON FUNZIONALI | Protezione dei dati e privacy, semplicità d'uso, Velocità memorizzazione e accesso ai dati. |
 PUNTI APERTI | |
 
 
@@ -76,6 +92,23 @@ PUNTI APERTI | |
 
 
 
+| | |
+|-|-|
+TITOLO | **Cancella Profilo**|
+DESCRIZIONE | Permette all'utente di rimuovere il proprio profilo, con dati annessi, dalla piattaforma. |
+ATTORI |Utente registrato |
+RELAZIONI |Gestione profilo |
+PRECONDIZIONI |L'utente è registrato nella piattaforma. |
+POSTCONDIZIOI |Tutti i dati relativi alla registrazione dell'utente vengono cancellati dal sistema. |
+SCENARIO PRINCIPALE |1. L'utente accede alla pagina di Profilo. <br/> 2. L'utente sceglie di cancellare il proprio profilo. |
+SCENARI ALTERNATIVI |A. L'utente non ha effettuato il login o la sessione è scaduta.<br/>A.1. L'utente viene reindirizzato alla schermata di login.  |
+REQUISITI NON FUNZIONALI | Protezione dei dati e della privacy, velocità delle operazioni di accesso ai dati. |
+PUNTI APERTI | |
+
+
+
+
+
 
 | | |
 |-|-|
@@ -108,23 +141,6 @@ SCENARI ALTERNATIVI | A. L'utente non è autenticato o la sessione è scaduta <b
 REQUISITI NON FUNZIONALI | Protezione dei dati, velocità delle operazioni di memorizzazione, semplicità d'uso.|
 PUNTI APERTI |Proteggere l'operazione tramite test di Turing (es. CAPTCHA) al fine di impedirne l'uso improprio. |
 
-
-
-
-
-
-| | |
-|-|-|
-TITOLO | **Cerca annunci**|
-DESCRIZIONE |Permette di navigare tra gli annunci della piattaforma filtrandoli secondo vari criteri. |
-ATTORI |Utente registrato, Visitatore  |
-RELAZIONI | |
-PRECONDIZIONI | |
-POSTCONDIZIONI |Il sistema mostra tutti gli annunci compatibili con i filtri impostati.  |
-SCENARIO PRINCIPALE | 1. L'utente inserisce i filtri di ricerca e naviga tra gli annunci compatibili. <br/>2. Se registrato, può salvare le preferenze dei filtri. <br/> 3. L'utente visualizza l'annuncio selezionato. <br/> 4. L'utente, se registrato, può segnalare o aggiungere ai preferiti l'annuncio visualizzato. |
-SCENARI ALTERNATIVI | A. L'utente non ha effettuato il login e cerca di visualizare i contatti del locatario di un annuncio<br/>A.1. Il sistema reindirizza l'utente alla schermata di login.<br/> B. L'utente non ha effettuato il login e cerca di segnalare o aggiungere ai preferiti un annuncio<br/> B.1. Il sistema reindirizza l'utente alla schermata di login.|
-REQUISITI NON FUNZIONALI | Protezione dei dati, velocità delle operazioni di accesso ai dati, semplicità d'uso.|
-PUNTI APERTI | |
 
 
 
@@ -198,7 +214,7 @@ ATTORI |Admin  |
 RELAZIONI | Login, Banna Utente, Elimina Annuncio |
 PRECONDIZIONI | L'Admin è registrato sulla piattaforma.  |
 POSTCONDIZIONI | |
-SCENARIO PRINCIPALE |1. Login.<br/> 2. L'Admin accede alla schermata di gestione della piattaforma. <br/>3. L'Admin può visualizzare la lista degli utenti registrati e degli annunci pubblicati. <br/> 4. L'Admin può scegliere di eliminare una o più voci dalle suddette liste. Il sistema lo reindirizza alla schermata corrispondente di ban utente o eliminazione annunci.|
+SCENARIO PRINCIPALE |1. Login.<br/> 2. L'Admin accede alla schermata di gestione della piattaforma. <br/>3. L'Admin può navigare tra i log del sistema. <br/> 4. L'Admin può visualizzare le segnalazione degli utenti<br/>5. L'admin può bannare un utente o eliminare un annuncio utilizzando le apposite interfacce.|
 SCENARI ALTERNATIVI |A. L'Admin non è autenticato o la sessione è scaduta <br/>A.1. L'Admin è rediretto alla schermata di login. |
 REQUISITI NON FUNZIONALI |Protezione dei dati e della privacy, velocità delle operazioni di accesso ai dati. |
 PUNTI APERTI | |
@@ -234,21 +250,4 @@ POSTCONDIZIONI |L'annuncio non è più visibile sulla piattaforma. |
 SCENARIO PRINCIPALE |1. Login. <br/> 2. L'admin si interfaccia con la schermata di amministrazione piattaforma. <br/>3. L'admin sceglie di eliminare un annuncio.<br/>4. L'admin seleziona l'annuncio da eliminare dalla lista di annunci pubblicati.|
 SCENARI ALTERNATIVI |A. L'admin non ha effettuato il login o la sessione è scaduta.<br/>A.1. L'admin viene reindirizzato alla schermata di login. |
 REQUISITI NON FUNZIONALI |  Protezione dei dati e della privacy, velocità delle operazioni di accesso ai dati. |
-PUNTI APERTI | |
-
-
-
-
-
-| | |
-|-|-|
-TITOLO | **Cancella Profilo**|
-DESCRIZIONE | Permette all'utente di rimuovere il proprio profilo, con dati annessi, dalla piattaforma. |
-ATTORI |Utente registrato |
-RELAZIONI |Gestione profilo |
-PRECONDIZIONI |l'utente è registrato nella piattaforma. |
-POSTCONDIZIOI |Tutti i dati relativi alla registrazione dell'utente vengono cancellati dal sistema. |
-SCENARIO PRINCIPALE |1. L'utente accede alla pagina di Profilo. <br/> 2. L'utente sceglie di cancellare il proprio profilo. |
-SCENARI ALTERNATIVI |A. L'utente non ha effettuato il login o la sessione è scaduta.<br/>A.1. L'utente viene reindirizzato alla schermata di login.  |
-REQUISITI NON FUNZIONALI | Protezione dei dati e della privacy, velocità delle operazioni di accesso ai dati. |
 PUNTI APERTI | |
