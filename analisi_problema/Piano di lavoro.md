@@ -13,6 +13,13 @@
 |Interfaccia Admin |Team progettazione|Team sviluppo + Team grafico|
 |Log|Team progettazione + Team sicurezza|Team sviluppo|
 
+- Team progettazione: Fattore Antonio, Palizzi Francesco, Verì Daniele.
+- Team DB: Fattore Antonio, Palizzi Francesco, Verì Daniele.
+- Team sviluppo: Fattore Antonio, Palizzi Francesco, Verì Daniele.
+- Team grafico: Fattore Antonio, Palizzi Francesco, Verì Daniele.
+- Team sicurezza: Fattore Antonio, Palizzi Francesco, Verì Daniele.
+
+
 I tempi di rilascio previsti sono i seguenti:
 - Progettazione entro il primo Giugno 2018
 - Sviluppo delle singole parti con collaudo unitario entro il 20 Giugno 2018
