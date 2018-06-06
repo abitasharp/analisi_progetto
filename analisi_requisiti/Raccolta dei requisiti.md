@@ -58,3 +58,8 @@ PREFERITI | Annunci salvati dall'utente. | |
 PASSWORD | Codice alfanumerico di almeno 8 caratteri. | |
 TIPOLOGIA ANNUNCIO | Categoria immobile (posto letto, stanza, appartamento). | |
 DASHBOARD | Interfaccia che permette all'amministratore di gestire la piattaforma. | PANNELLO DI CONTROLLO |
+
+
+**SISTEMI ESTERNI**
+
+Il sistema dovrà interfacciarsi con un servizio di mappe interattive.
