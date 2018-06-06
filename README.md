@@ -18,8 +18,3 @@ Per pubblicare un annuncio l’utente registrato dovrà specificare:
 1. tipologia annuncio (casa, stanza, posto letto...)
 2. caratteristiche immobile (locazione, costo...)
 3. requisiti affittuari (fumatori, erasmus, animali...)
-
-# Index
-
-1. Analisi dei requisiti
-  1.1. 
