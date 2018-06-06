@@ -21,9 +21,11 @@ Il non ripudio è garantito dall sicurezza del canale creato per la comunicazion
 
 ## Scelta dell'architettura
 
-Dal punto di vista architetturale, l’architettura più idonea per questo tipo di sistema è un’architettura client/server a tre livelli:
+Dal punto di vista architetturale, l’architettura più idonea per questo tipo di sistema è un’architettura client/server a quattro livelli:
 
 - Client: Gli utenti interagiscono con la piattaforma tramite browser, questo permette un alto disaccoppiamento dall'hardware e grande portabilità.
+
+- Proxy: È l'unico punto di accesso da internet, regola la comunicazione tra i server nella rete privata e i client esterni.
 
 - Server: Si è scelto di utilizzare un unico server per tutte le operazioni svolte dalla piattaforma in quanto un'architettura distribuita oltre a rivelarsi più costosa in termini economici e progettuali, è stata ritenuta superflua poichè il traffico stimato (per il momento) non richiede soluzioni più sofisticate (load balancing ecc).
 
