@@ -33,6 +33,9 @@ Dal punto di vista architetturale, l’architettura più idonea per questo tipo 
 
 - Log: Per la gestione dei log  si  avrà  un  server  dedicato che comunica con il server vero e proprio attraverso una rete privata e non esposta ad internet.
 
+
+- Map cache: Per ridurre il numero di richieste verso un server di mappe, si  avrà  un  server  responsabile di fare cache delle richieste più frequenti che comunica con il server vero e proprio attraverso una rete privata e non esposta ad internet.
+
 Per garantire la sicurezza nella comunicazione client/server si è deciso di utilizzare il protocollo 
 tls (transport layer security). TLS  è un protocollo crittografico che permette una comunicazione sicura dalla  sorgente  al  destinatario  (end-to-end)  su  reti TCP/IP fornendo autenticazione, integrità dei dati e cifratura.
 Infine, per impedire attacchi di tipo Man-In-The-Middle è necessario registrare il proprio dominio presso CA (Certificate Authority).
