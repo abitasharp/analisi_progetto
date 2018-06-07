@@ -39,3 +39,5 @@ Dal punto di vista architetturale, l’architettura più idonea per questo tipo 
 Per garantire la sicurezza nella comunicazione client/server si è deciso di utilizzare il protocollo 
 tls (transport layer security). TLS  è un protocollo crittografico che permette una comunicazione sicura dalla  sorgente  al  destinatario  (end-to-end)  su  reti TCP/IP fornendo autenticazione, integrità dei dati e cifratura.
 Infine, per impedire attacchi di tipo Man-In-The-Middle è necessario registrare il proprio dominio presso CA (Certificate Authority).
+
+Si è scelto di utilizzare un server proxy come unico punto di accesso a internet per proteggere la rete privata e controllare il traffico. Inoltre tale scelta permette la sostituzione trasparente dei server in caso di guasti/aggiornamenti.
