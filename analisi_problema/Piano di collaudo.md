@@ -6,38 +6,23 @@ Lato frontend, sviluppo di Unit test (framework Mocha per Javascript) per testar
 
 I test saranno scritti parallelamente al codice seguendo una metodologia di sviluppo Agile, favorita dal ristretto numero di membri nei Team di progettazione e sviluppo e dalla complessità dell'applicazione.
 
+A titolo d’esempio si riporta solo il test per la classe Validator
 
 
 
-A	titolo d’esempio si riporta	solo il	test per la	classe Utente
-
-
-
-
-[TestFixture]
-public class TestUtente
-{
-	private Utente _utente;
+```C#
+	[TestFixture]	
+	public class TestValidator
+	{
 	
-[SetUp]
-public void UtenteSetUp() {
-	_utente = new Utente("Giovanni", "Mucciaccia", "gio@outlook.it","blablabla90", "blablabla90", 1234568978, new DateTime(1990,5,15) )
+		[Test]
+		public void TestParse() {
+			Assert.That(Validator.parse("Nome", "Giovanni"), true);
+			Assert.That(Validator.parse("Email", "michele.rossi@unibo.it"), true);
+			Assert.That(Validator.parse("Email", "michele.rossi.unibo.it"), false);
+			Assert.That(Validator.parse("IVA", "ASDFGHJK123456"), false);
+			Assert.That(Validator.parse("Birth", "11/10/1987"), true);
+			Assert.That(Validator.parse("Password", "password"), false);
+		}
 	}
-
-[Test]
-public void TestMethod() {
-	Assert.That(_utente.getNome(), Is.EqualTo("Giovanni"));
-	Assert.That(_utente.getCognome(), Is.EqualTo("Mucciaccia"));
-	Assert.That(_utente.getEmail(), Is.EqualTo("gio@outlook.it"));
-	Assert.That(_utente.getPassword(), Is.EqualTo("blablabla90"));
-	Assert.That(_utente.getConfermaPassword(), Is.EqualTo("blablabla90"));
-	Assert.That(_utente.getNumeroTelefono(), Is.EqualTo(1234568978));
-	Assert.That(_utente.getDataNascita(), Is.EqualTo(new DateTime(1990,5,15)));
-	}
-	
-[Test]
-public void TestMethod() {
-	_utente.setNumeroTelefono(1115478652);
-	Assert.That(_utente.getNumeroTelefono(), Is.EqualTo(1115478652));
-	}
-}
+```
