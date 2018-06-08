@@ -14,7 +14,7 @@
 |Home Amministrazione|Scelta delle operazioni eseguibili, lista degli utenti e degli annunci sulla piattaforma, visualizzazione log e anomalie|Amministra piattaforma|
 |View Banna Utente|ID utente, Messaggio di avviso|Banna utente|
 |View Elimina Annuncio|ID annuncio, Messaggio di avviso|Elimina annuncio|
-|View Log|Data, Ora, Oerazione eseguita, Messaggio|Amministrazione Piattaforma|
+|View Log|Data, Ora, Operazione eseguita, Messaggio|Amministrazione Piattaforma|
 |View Segnalazioni|Annuncio segnalato, Utente segnalatore, Messaggio, Timestamp|Amministrazione Piattaforma|
 
 

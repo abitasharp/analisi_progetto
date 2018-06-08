@@ -21,9 +21,11 @@ Il non ripudio è garantito dall sicurezza del canale creato per la comunicazion
 
 ## Scelta dell'architettura
 
-Dal punto di vista architetturale, l’architettura più idonea per questo tipo di sistema è un’architettura client/server a tre livelli:
+Dal punto di vista architetturale, l’architettura più idonea per questo tipo di sistema è un’architettura client/server a quattro livelli:
 
 - Client: Gli utenti interagiscono con la piattaforma tramite browser, questo permette un alto disaccoppiamento dall'hardware e grande portabilità.
+
+- Proxy: È l'unico punto di accesso da internet, regola la comunicazione tra i server nella rete privata e i client esterni.
 
 - Server: Si è scelto di utilizzare un unico server per tutte le operazioni svolte dalla piattaforma in quanto un'architettura distribuita oltre a rivelarsi più costosa in termini economici e progettuali, è stata ritenuta superflua poichè il traffico stimato (per il momento) non richiede soluzioni più sofisticate (load balancing ecc).
 
@@ -31,6 +33,11 @@ Dal punto di vista architetturale, l’architettura più idonea per questo tipo 
 
 - Log: Per la gestione dei log  si  avrà  un  server  dedicato che comunica con il server vero e proprio attraverso una rete privata e non esposta ad internet.
 
+
+- Map cache: Per ridurre il numero di richieste verso un server di mappe, si  avrà  un  server  responsabile di fare cache delle richieste più frequenti che comunica con il server vero e proprio attraverso una rete privata e non esposta ad internet.
+
 Per garantire la sicurezza nella comunicazione client/server si è deciso di utilizzare il protocollo 
 tls (transport layer security). TLS  è un protocollo crittografico che permette una comunicazione sicura dalla  sorgente  al  destinatario  (end-to-end)  su  reti TCP/IP fornendo autenticazione, integrità dei dati e cifratura.
 Infine, per impedire attacchi di tipo Man-In-The-Middle è necessario registrare il proprio dominio presso CA (Certificate Authority).
+
+Si è scelto di utilizzare un server proxy come unico punto di accesso a internet per proteggere la rete privata e controllare il traffico. Inoltre tale scelta permette la sostituzione trasparente dei server in caso di guasti/aggiornamenti.
